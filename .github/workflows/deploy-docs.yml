@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
 
@@ -28,7 +28,8 @@ jobs:
       - name: Deploy Rafart
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          lfs: true
+          token: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: out # The folder the action should deploy.
         # run: npm run build --existing-output-dir=out
