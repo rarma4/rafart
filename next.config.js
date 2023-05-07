@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  esModule: true,
   images:{
-    loader:"akamai" ,
-    path:"",
+    disableStaticImages: true,
+    domains: ['img.youtube.com']
   }
 }
 
