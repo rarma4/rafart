@@ -1,37 +1,68 @@
+name: Deploy Rafart-React
 
-name: Build and Deploy
 on:
   push:
     branches:
       - main
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: Cache  💾
-        uses: actions/cache@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          path: ${{ github.workspace }}/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
+          node-version: 16
 
-      - name: Install and Build 🔧
-        uses: actions/setup-node@v1
-      - run: yarn install
-      - run: yarn export
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Build
+        # run: npm run build
+        run: npm run build && npm run export && touch ./out/.nojekyll
+
+      - name: Deploy Rafart
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: out # The folder the action should deploy.
+        # run: npm run build --existing-output-dir=out
         env:
-            CI: true
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+          
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: out
-          CLEAN: true
-view raw0-integrate.yml hosted with ❤ by GitHub
+# name: GitHub Pages deploy
+
+# on:
+#   push:
+#     branches: [main]
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout 🛎️
+#         uses: actions/checkout@v2.3.1
+#       - name: Use Node.js 14.x
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: '14.x'
+
+#       - name: Installing my packages
+#         run: npm ci --legacy-peer-deps
+
+#       - name: Build my App
+#         run: npm run build && npm run export && touch ./out/.nojekyll
+
+#       - name: Deploy 🚀
+#         uses: JamesIves/github-pages-deploy-action@4.1.0
+#         with:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           BRANCH: gh-pages # The branch the action should deploy to.
+#           FOLDER: out # The folder the action should deploy.
