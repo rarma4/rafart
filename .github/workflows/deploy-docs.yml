@@ -44,6 +44,10 @@ on:
   push:
     branches:
       - main
+
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -54,7 +58,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Cache  💾
+      - name: Cache
         uses: actions/cache@v2
         with:
           path: ${{ github.workspace }}/.next/cache
