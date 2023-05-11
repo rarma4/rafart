@@ -5,12 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "start http://localhost:3000 && next dev ",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next export",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "next lint"
   },
   "dependencies": {
     "@types/node": "20.1.0",
