@@ -1,5 +1,8 @@
-export default function header(){
+import Menu from '../components/Menu'
+
+
+export default function Header(){
     return(
-        <div>Header</div>
+        <Menu/>
     )
 }
