@@ -1,11 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  esModule: true,
-  images:{
-    disableStaticImages: true,
-    domains: ['img.youtube.com']
-  }
-}
+const nextConfig = {}
 
 module.exports = nextConfig
