@@ -1,6 +1,8 @@
 import './globals.scss'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import 'bootswatch/dist/morph/bootstrap.min.css';
+import 'bootswatch/dist/darkly/bootstrap.min.css';
 import 'bootswatch/dist/slate/bootstrap.min.css';
 
 const inter = Inter({ subsets: ['latin'] })

@@ -6,12 +6,10 @@ export default function Home() {
   return (
     <>
 
-      <div className="container text-center">
-        <div className="row">
-          <div className="col">
+
             <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
 
-              <div className="container-fluid">
+              <div className="container">
                 <a className="navbar-brand" href="#">
                   <Image
                     src="../../assets/img/rafart-logo.svg"
@@ -46,9 +44,7 @@ export default function Home() {
                 </div>
               </div>
             </nav>
-          </div>
-        </div>
-      </div>
+
     </>
   )
 }
