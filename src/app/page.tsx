@@ -1,11 +1,13 @@
 import Image from 'next/image'
-import styles from './page.module.scss'
-import Navigation from './components/Navigation'
+import './styles/pages/page.scss'
 
 export default function Home() {
   return (
     <>
-      <Navigation/>
+      <div className="container">
+        <h1>teste</h1>
+      </div>
+
     </>
   )
 }
