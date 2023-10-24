@@ -20,11 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-
       <body className={inter.className}>
-        <Navigation/>
+      {/* <body className="d-flex flex-column min-nh-100"> */}
+        <Navigation />
         {children}
-      <script src="../../assets/js/bootstrap.bundle.min.js" async></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js" async></script>
+
       </body>
     </html>
   )
