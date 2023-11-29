@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 // import 'bootswatch/dist/darkly/bootstrap.min.css';
 import 'bootswatch/dist/slate/bootstrap.min.css';
 import Navigation from './components/Navigation'
+import Footer from './components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       {/* <body className="d-flex flex-column min-nh-100"> */}
         <Navigation />
         {children}
+        <Footer />
         <script src="../../assets/js/bootstrap.bundle.min.js" async></script>
 
       </body>
