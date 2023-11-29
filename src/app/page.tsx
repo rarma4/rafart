@@ -1,12 +1,17 @@
-
+import './styles/pages/page.scss'
 
 export default function Home() {
   return (
     <>
-      <div>
-        <h1>
-          teste
-        </h1>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <h1>
+              Raf'Art
+            </h1>
+            <p>testando</p>
+          </div>
+        </div>
       </div>
     </>
   )
