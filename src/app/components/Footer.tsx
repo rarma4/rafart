@@ -13,7 +13,7 @@ export default function Footer() {
 
         <footer className="container  ">
           <div className="row p-3 text-center mt-auto d-flex mt-auto d-flex justify-content-evenly ">
-            <div className="col-4 d-flex justify-content-evenly">
+            <div className="col-xl-6 col-md-10 col-xs-4 d-flex justify-content-evenly">
               <Link href="https://www.facebook.com/rarma4/" target="_blank">
                 <div className="icon" title="facebook">
                   <FontAwesomeIcon icon={faFacebookSquare} />
