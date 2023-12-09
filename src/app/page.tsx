@@ -7,7 +7,7 @@ export default function Home() {
         <div className="row">
           <div className="col">
             <h1>
-              Teste
+              Raf Art Developer
             </h1>
             <p>testando</p>
           </div>
