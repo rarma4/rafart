@@ -7,8 +7,16 @@ import 'bootswatch/dist/slate/bootstrap.min.css'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import { Comfortaa } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+ 
+const comfortaa = Comfortaa({
+  weight: '700',
+  variable: '--font-comfortaa',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Rafart',
@@ -22,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>
+      <body className={comfortaa.className}>
       {/* <body className="d-flex flex-column min-nh-100"> */}
         <Navigation />
         <Header/>
