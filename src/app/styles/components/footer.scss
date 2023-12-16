@@ -1,4 +1,18 @@
 
 .icon{
-    width: 20px;
+    width: 25px;
+    margin: 5px;
+    text-decoration: none;
+
+    :hover{
+        color: dimgray;
+        color: darkgoldenrod;
+        transition: all .3s;
+        transform: scale(0.9);
+        // animation: fadeIn 1000s forwards;
+    }
+    :active{
+        transition: all .3s;
+        transform: scale(1.1);
+      }
 }
