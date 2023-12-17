@@ -4,5 +4,6 @@
     font-family: 'Comfortaa', sans-serif;
     // font-family: 'Quicksand', sans-serif;
     font-family: var(--font-comfortaa);
-    
+    // transition: all .3s;
+    animation: fadeIn 1000s forwards;
 }

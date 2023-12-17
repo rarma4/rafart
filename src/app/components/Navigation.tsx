@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import '../styles/components/navigation.scss'
+import Link from "next/link"
+
 
 export default function Navigation() {
     return (
@@ -26,7 +28,8 @@ export default function Navigation() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Features</a>
+                  {/* <a className="nav-link" href="#sobre">Sobre</a> */}
+                  <Link className="nav-link" href="/#sobre">Sobre</Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">Pricing</a>
