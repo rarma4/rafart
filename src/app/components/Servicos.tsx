@@ -1,6 +1,6 @@
 import '../styles/components/servicos.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookSquare, faSquareInstagram, faSquareGithub, faLinkedin, faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faDisplay  } from '@fortawesome/free-solid-svg-icons' 
 
 export default function Servicos() {
   return (
@@ -20,7 +20,7 @@ export default function Servicos() {
                 <div className="card-body">
                   <h4 className="card-title">Websites</h4>
                   <div className="iconService w-100" title="facebook">
-                    <FontAwesomeIcon icon={faFacebookSquare} />
+                    <FontAwesomeIcon icon={faDisplay} />
                   </div>
                   {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
                   <p className="card-text">Quer aumentar sua visibilidade na internet?  Criamos sites modernos e responsivos (se adaptam ao tamanho da tela do usuário).</p>
