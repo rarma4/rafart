@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import '../styles/components/footer.scss'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

@@ -1,11 +1,7 @@
-import Image from 'next/image'
 import '../styles/components/formacao.scss'
 import { FormacaoAcademica } from '../utils/Utils'
-import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faSquarePhone } from '@fortawesome/free-solid-svg-icons'
+
 // import {  } from '@fortawesome/free-regular-svg-icons'
-import { faFacebookSquare, faSquareInstagram, faSquareGithub, faLinkedin, faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 export default function Formacao() {
   return (

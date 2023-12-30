@@ -1,10 +1,4 @@
-import Image from 'next/image'
 import '../styles/components/sobre.scss'
-import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faSquarePhone } from '@fortawesome/free-solid-svg-icons'
-// import {  } from '@fortawesome/free-regular-svg-icons'
-import { faFacebookSquare, faSquareInstagram, faSquareGithub, faLinkedin, faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 export default function Sobre() {
   return (
@@ -23,10 +17,7 @@ export default function Sobre() {
             </div>
             <div className="col-md-6 col-sm-6 p-3">
               <h3 className="text-center mb-4">Minhas Habilidades</h3>
-
-              {/* <div className="ml-3 d-flex justify-content-between flex-row">
-                <p className="fs-6">Wordpress</p><p className="fs-6">75%</p>
-              </div> */}
+              
               <div className="progress mb-4">
                 <div className="progress-bar progress-bar-striped progress-bar-animated bg-warning d-flex justify-content-around flex-row" role="progressbar" style={{ width: '75%' }}>
                   <p>Wordpress</p><p>75%</p>
