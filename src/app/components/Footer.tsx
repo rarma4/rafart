@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="container-fluid bg-primary text-white ">
 
         <footer className="container">
-          <div className="row p-3 text-center mt-auto d-flex mt-auto d-flex justify-content-evenly ">
+          <div className="row p-3 text-center mt-auto d-flex justify-content-evenly ">
             <div className="col-xl-3 col-md-4 col-xs-1 d-flex justify-content-evenly">
               <Link href="https://www.facebook.com/rarma4/" target="_blank">
                 <div className="icon" title="facebook">
