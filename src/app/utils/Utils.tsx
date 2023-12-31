@@ -63,7 +63,7 @@ export const FormacaoAcademica = [
       "id": 1,
       "altura": 50,
       "largura": 120,
-      "src": "../../assets/img/Design.svg",
+      "src": "../../assets/img/design.svg",
       "titulo": "Design",
       "subtitulo": "",
       "texto": "Criação e desenvolvimento de identidade visual e logomarca.",
