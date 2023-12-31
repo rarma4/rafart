@@ -1,22 +1,32 @@
 import '../styles/components/experiencia.scss'
-import Formacao from './Formacao'
-import Experiencias from './Experiencias'
+import { ExperienciaProfissional } from '../utils/Utils'
 
 export default function Experiencia() {
   return (
     <>
-      <div className="container-fluid text-white d-flex justify-content-evenly flex-column " id="#experiencia">
-        <div className="container">
-          <div className="row mt-4">
-            <h2 className="text-center text-warning">Experiência</h2>
-            <div className="col-md-6 col-sm-6 p-3">
-              <Formacao/>
-            </div>
-            <div className="col-md-6 col-sm-6 p-3">
-              <Experiencias/>
+      <div className="accordion" id="accordionExample">
+        {ExperienciaProfissional.map((item, index) => (
+
+          <div className="accordion-item" key={index}>
+            <h2 className="accordion-header" id="headingOne">
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={item.chave} aria-expanded="false" aria-controls={item.retorno}>
+                {item.nome}
+              </button>
+            </h2>
+            <div id={item.retorno} className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                <strong>{item.descricao}</strong>
+                <p><code>{item.data}</code></p>
+                <ul>
+                  {item.detalhes.map((detalhe, index) => (
+                    <li key={index}>{detalhe}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+
+        ))}
       </div>
     </>
   )

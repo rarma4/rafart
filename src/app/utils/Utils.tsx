@@ -57,3 +57,67 @@ export const FormacaoAcademica = [
       ]
     }
   ]
+
+  export const ServicoS = [
+    {
+      "id": 1,
+      "altura": 50,
+      "largura": 120,
+      "src": "../../assets/img/Design.svg",
+      "titulo": "Design",
+      "subtitulo": "",
+      "texto": "Criação e desenvolvimento de identidade visual e logomarca.",
+    },
+    {
+      "id": 2,
+      "altura": 80,
+      "largura": 120,
+      "src": "../../assets/img/computer.svg",
+      "titulo": "Websites",
+      "subtitulo": "",
+      "texto": "Criação de sites modernos e responsivos (se adaptam ao tamanho da tela do usuário).",
+    },
+    {
+      "id": 3,
+      "altura": 70,
+      "largura": 120,
+      "src": "../../assets/img/shop.svg",
+      "titulo": "E-Commerce",
+      "subtitulo": "",
+      "texto": "Venda na internet e se destaque com sua loja virtual",
+    }
+  ]
+
+  export const habilidadeS = [
+    {
+      "id": 1,
+      "titulo": "WordPress",
+      "nivel": "75%",
+    },
+    {
+      "id": 2,
+      "titulo": "HTML",
+      "nivel": "100%",
+    },
+    {
+      "id": 3,
+      "titulo": "CSS - SCSS",
+      "nivel": "90%",
+    },
+    {
+      "id": 4,
+      "titulo": "Javascript",
+      "nivel": "85%",
+    },
+    {
+      "id": 5,
+      "titulo": "PHP",
+      "nivel": "90%",
+    },
+    {
+      "id": 6,
+      "titulo": "React - NextJS ",
+      "nivel": "80%",
+    },
+
+  ]
