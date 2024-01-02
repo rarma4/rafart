@@ -4,7 +4,7 @@ import { habilidadeS } from '../utils/Utils'
 export default function Sobre() {
   return (
     <>
-      <div className="container-fluid bg-primary text-white d-flex justify-content-evenly flex-column " id="#sobre">
+      <div className="container-fluid bg-primary text-white d-flex justify-content-evenly flex-column " id="sobre">
         <div className="container">
           <div className="row mt-4 mb-5">
             <h2 className="text-center text-warning">Sobre mim</h2>

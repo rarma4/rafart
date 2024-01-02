@@ -1,5 +1,6 @@
 import './styles/pages/page.scss'
 import { Comfortaa } from 'next/font/google'
+import Header from './sections/Header'
 import Sobre from  './sections/Sobre'
 import Experiencias from './sections/Experiencias'
 import Servicos from './sections/Servicos'
@@ -13,6 +14,7 @@ const comfortaa = Comfortaa({
 export default function Home() {
   return (
     <>
+      <Header/>
       <Servicos/>
       <Sobre/>
       <Experiencias/>

@@ -5,7 +5,7 @@ import Experiencia from '../components/Experiencia'
 export default function Experiencias() {
   return (
     <>
-      <div className="container-fluid text-white d-flex justify-content-evenly flex-column " id="#experiencia">
+      <div className="container-fluid text-white d-flex justify-content-evenly flex-column " id="experiencia">
         <div className="container">
           <div className="row mt-4 mb-5">
             <h2 className="text-center text-warning">Experiência</h2>
