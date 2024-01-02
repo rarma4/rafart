@@ -4,6 +4,7 @@ import Header from './sections/Header'
 import Sobre from  './sections/Sobre'
 import Experiencias from './sections/Experiencias'
 import Servicos from './sections/Servicos'
+import Teste from './sections/Teste'
 
 const comfortaa = Comfortaa({
   weight: '700',
@@ -18,6 +19,7 @@ export default function Home() {
       <Servicos/>
       <Sobre/>
       <Experiencias/>
+      <Teste/>
     </>
   )
 }

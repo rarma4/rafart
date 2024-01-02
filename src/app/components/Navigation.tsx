@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import '../styles/components/navigation.scss'
 import Link from "next/link"
-import { useRouter } from 'next/navigation'
-// import { useRouter } from 'next/router'
 
 export default function Navigation() {
   return (
@@ -24,12 +22,12 @@ export default function Navigation() {
           <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav ms-md-auto">
               <li className="nav-item">
-                <a className="nav-link active" href="#">Home
+                {/* <a className="nav-link active" href="#">Home
                   <span className="visually-hidden">(current)</span>
-                </a>
-                {/* <Link className="nav-link " href="#">Home
+                </a> */}
+                <Link className="nav-link " href="#">Home
                     <span className="visually-hidden">(current)</span>
-                  </Link> */}
+                </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" scroll={true} href="/#servicos">Serviços</Link>
