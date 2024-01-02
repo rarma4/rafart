@@ -19,7 +19,7 @@ const comfortaa = Comfortaa({
 })
 
 export const metadata: Metadata = {
-  title: 'Rafart',
+  title: `Raf'Art – Developer and WebDesign`,
   description: 'Pagina de Rafael Marinho',
 }
 
