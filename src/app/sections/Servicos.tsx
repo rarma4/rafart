@@ -1,5 +1,5 @@
 import '../styles/components/servicos.scss'
-import Servico from './Servico'
+import Servico from '../components/Servico'
 
 export default function Servicos() {
   return (

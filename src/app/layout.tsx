@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google'
 // import 'bootswatch/dist/darkly/bootstrap.min.css';
 import 'bootswatch/dist/slate/bootstrap.min.css'
 import Navigation from './components/Navigation'
-import Footer from './components/Footer'
-import Header from './components/Header'
+import Footer from './sections/Footer'
+import Header from './sections/Header'
 import { Comfortaa } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })

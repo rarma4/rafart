@@ -1,8 +1,8 @@
 import '../styles/components/experiencias.scss'
-import Formacao from './Formacao'
-import Experienciaa from './Experiencia'
+import Formacao from '../components/Formacao'
+import Experiencia from '../components/Experiencia'
 
-export default function Experiencia() {
+export default function Experiencias() {
   return (
     <>
       <div className="container-fluid text-white d-flex justify-content-evenly flex-column " id="#experiencia">
@@ -13,7 +13,7 @@ export default function Experiencia() {
               <Formacao/>
             </div>
             <div className="col-md-6 col-sm-6 p-3">
-              <Experienciaa/>
+              <Experiencia/>
             </div>
           </div>
         </div>

@@ -25,20 +25,20 @@ export default function Navigation() {
                   {/* <a className="nav-link active" href="#">Home
                     <span className="visually-hidden">(current)</span>
                   </a> */}
-                  <Link className="nav-link active" href="/#topo">Home
+                  <Link className="nav-link " href="/#">Home
                     <span className="visually-hidden">(current)</span>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  {/* <a className="nav-link" href="#sobre">Sobre</a> */}
+                  <Link className="nav-link" href="/#servicos">Serviços</Link>
+                </li>
+                <li className="nav-item">
                   <Link className="nav-link" href="/#sobre">Sobre</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" href="/#experiencia">Experiência</Link>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">About</a>
-                </li>
+
   
               </ul>
   

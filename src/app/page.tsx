@@ -1,8 +1,8 @@
 import './styles/pages/page.scss'
 import { Comfortaa } from 'next/font/google'
-import Sobre from  './components/Sobre'
-import Experiencia from './components/Experiencias'
-import Servicos from './components/Servicos'
+import Sobre from  './sections/Sobre'
+import Experiencias from './sections/Experiencias'
+import Servicos from './sections/Servicos'
 
 const comfortaa = Comfortaa({
   weight: '700',
@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Servicos/>
       <Sobre/>
-      <Experiencia/>
+      <Experiencias/>
     </>
   )
 }
