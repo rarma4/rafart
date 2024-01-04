@@ -75,7 +75,7 @@ export const FormacaoAcademica = [
       "src": "../../assets/img/computer.svg",
       "titulo": "Websites",
       "subtitulo": "",
-      "texto": "Criação de sites modernos e responsivos (se adaptam ao tamanho da tela do usuário).",
+      "texto": "Criação de sites modernos e responsivos (se adaptam ao tamanho da tela).",
     },
     {
       "id": 3,

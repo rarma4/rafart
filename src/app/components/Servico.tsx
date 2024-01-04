@@ -45,7 +45,7 @@ export default function Servicos() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1.05,
+          slidesToShow: 1.04,
           slidesToScroll: 1,
           initialSlide: 0,
           arrows: false,
@@ -55,7 +55,7 @@ export default function Servicos() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.05,
+          slidesToShow: 1.04,
           slidesToScroll: 1,
           arrows: false,
           autoplay: true,
@@ -73,10 +73,10 @@ export default function Servicos() {
 
             <div className="card">
               <div className="card-body">
-                <div className="iconService w-100" title="">
+                <div className="iconService w-100 d-flex justify-content-center" title="">
                   <Image
                     src={item.src}
-                    alt="logo rafart"
+                    alt={item.titulo}
                     width={item.altura}
                     height={item.largura}
                   />
