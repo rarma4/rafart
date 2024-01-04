@@ -11,11 +11,25 @@ export default function Servicos() {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
+    autoplay: true,
+    customPaging: function () {
+      return (
+        <button>
+          <div className="dotInside"></div>
+          <span className="progressSlider-stay progressSlider--thin">
+            <svg height="70" width="70">
+              <circle id="outer" cx="35" cy="35" r="25" strokeWidth="3" fill="none" stroke="#f89406" />
+              <circle id="inner" cx="35" cy="35" r="25" strokeWidth="5" fill="none" stroke="#e6d0d2" />
+            </svg>
+          </span>
+        </button>
+      );
+    },
     responsive: [
       {
         breakpoint: 1024,
@@ -24,7 +38,8 @@ export default function Servicos() {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-          arrows: true
+          arrows: true,
+          autoplay: true,
         }
       },
       {
@@ -33,7 +48,8 @@ export default function Servicos() {
           slidesToShow: 1.05,
           slidesToScroll: 1,
           initialSlide: 0,
-          arrows: false
+          arrows: false,
+          autoplay: true,
         }
       },
       {
@@ -41,7 +57,8 @@ export default function Servicos() {
         settings: {
           slidesToShow: 1.05,
           slidesToScroll: 1,
-          arrows: false
+          arrows: false,
+          autoplay: true,
         }
       }
     ]
@@ -76,7 +93,7 @@ export default function Servicos() {
         ))}
 
       </Slider>
-      
+
     </>
   )
 }

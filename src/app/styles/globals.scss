@@ -7,3 +7,112 @@
     // transition: all .3s;
     animation: fadeIn 1000s forwards;
 }
+.slick-dots
+{
+  bottom: -35px;
+}
+.dotInside
+{
+  width: 11px;
+  height: 11px;
+  background-color: #FFEDEF;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -7px;
+}
+.progressSlider {
+  transform: rotate(-90deg);
+  stroke: white;
+  transform: rotate( -90deg ) scale(.33) translate(110px, -105px);
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  animation: dashOpacity 6s forwards;
+}
+.progressSlider-stay {
+  transform: rotate(-90deg);
+  stroke: white;
+  transform: rotate( -90deg ) scale(.33) translate(110px, -105px);
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  opacity: 0;
+}
+
+.progressSlider #inner, .progressSlider-stay #inner{
+  stroke-dasharray: 157;
+  stroke-dashoffset: 157;
+}
+.slick-active .progressSlider-stay #inner, .slick-active .progressSlider #inner {
+  animation: dash 6s forwards;
+}
+.slick-active .progressSlider-stay
+{
+  animation: dashOpacityStay 6s forwards;
+}
+.slick-active .dotInside
+{
+  background-color: #f89406;
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: -157;
+  }
+}
+@keyframes dashOpacityStay {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes dashOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+// Below stuff for position only
+.progressSlider, .progressSlider-stay {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+  &.progress--thin {
+    left: auto;
+    right: 5%;
+  }
+
+  &.progress--fat {
+    bottom: 5%;
+    top: auto;
+  }
+}
