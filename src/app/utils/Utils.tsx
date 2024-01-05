@@ -93,12 +93,12 @@ export const FormacaoAcademica = [
     {
       "id": 1,
       "titulo": "WordPress",
-      "nivel": "75%",
+      "nivel": "95%",
     },
     {
       "id": 2,
       "titulo": "HTML",
-      "nivel": "50%",
+      "nivel": "100%",
     },
     {
       "id": 3,

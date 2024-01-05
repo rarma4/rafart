@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import '../styles/components/offnavigation.scss'
 import Link from "next/link"
-
+import MenuItens from '../components/MenuItens'
 
 export default function OffNavigation() {
   return (
@@ -16,20 +16,7 @@ export default function OffNavigation() {
         <div className="offcanvas-body">
 
           <ul className="nav nav-pills flex-column">
-            <li className="nav-item">
-              <a className="nav-link active" href="#">Home
-                  <span className="visually-hidden">(current)</span>
-                </a>
-            </li>
-            <li className="nav-item" data-bs-dismiss="offcanvas" >
-              <Link className="nav-link" href="/#conhecimentos">Conhecimentos</Link>
-            </li>
-            <li className="nav-item" data-bs-dismiss="offcanvas" >
-              <Link className="nav-link" href="/#sobre">Sobre</Link>
-            </li>
-            <li className="nav-item" data-bs-dismiss="offcanvas" >
-              <Link className="nav-link" href="/#experiencia">Experiência</Link>
-            </li>
+            <MenuItens mobile = "offcanvas"/>
           </ul>
 
         </div>

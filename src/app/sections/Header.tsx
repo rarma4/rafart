@@ -1,4 +1,4 @@
-import '../styles/components/header.scss'
+import '../styles/sections/header.scss'
 import Link from 'next/link'
 
 export default function Header() {

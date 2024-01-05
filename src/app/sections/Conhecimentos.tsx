@@ -1,4 +1,4 @@
-import '../styles/components/conhecimentos.scss'
+import '../styles/sections/conhecimentos.scss'
 import Conhecimento from '../components/Conhecimento'
 
 export default function Conhecimentos() {

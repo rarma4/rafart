@@ -1,4 +1,4 @@
-import '../styles/components/footer.scss'
+import '../styles/sections/footer.scss'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faSquarePhone } from '@fortawesome/free-solid-svg-icons'

@@ -1,5 +1,6 @@
-import '../styles/components/sobre.scss'
+import '../styles/sections/sobre.scss'
 import { habilidadeS } from '../utils/Utils'
+import Link from "next/link"
 
 export default function Sobre() {
   return (
@@ -13,7 +14,7 @@ export default function Sobre() {
               <p>Bacharel em Sistemas de Informação, conhecimentos em PHP, Javascript, Python, HTML, CSS, Bootstrap, WordPress, SQL, React. </p>
               <p>Conhecimento em Web Design, Designer Gráfico, com especialidade em desenvolvimento de sites institucionais, blogs, portais corporativos, lojas virtuais, landing pages e catálogos online para empresas e/ou profissionais liberais.</p>
               <p> Criação de identidades visuais para empresas, logomarcas, cartões de visita, banners e peças gráficas para campanhas publicitárias</p>
-              <a href="#work" className="btn btn-outline-warning smoothScroll tm-view-more-btn">Download CV</a>
+              <Link className="btn btn-outline-warning smoothScroll tm-view-more-btn" href="../../assets/docs/Rafael_Curriculum_ti.pdf" target="_blank">Download CV</Link>
 
             </div>
             <div className="col-md-6 col-sm-6 p-3">

@@ -1,4 +1,4 @@
-import '../styles/components/experiencias.scss'
+import '../styles/sections/experiencias.scss'
 import Formacao from '../components/Formacao'
 import Experiencia from '../components/Experiencia'
 

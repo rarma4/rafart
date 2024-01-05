@@ -2,6 +2,7 @@ import Image from 'next/image'
 import '../styles/components/navigation.scss'
 import Link from "next/link"
 import OffNavigation from '../components/OffNavigation'
+import MenuItens from '../components/MenuItens'
 
 export default function Navigation() {
   return (
@@ -27,29 +28,7 @@ export default function Navigation() {
 
           <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav ms-md-auto">
-              <li className="nav-item">
-                {/* <a className="nav-link active" href="#">Home
-                  <span className="visually-hidden">(current)</span>
-                </a> */}
-                <Link className="nav-link " href="#">Home
-                  <span className="visually-hidden">(current)</span>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" scroll={true} href="/#conhecimentos">Conhecimentos</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" scroll={true} href="/#sobre">Sobre</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" scroll={true} href="/#experiencia">Experiência</Link>
-                {/* <a className="nav-link" href="#experiencia">Experiência</a> */}
-              </li>
-              {/* <li className="nav-item">
-                <Link className="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                <span className="navbar-toggler-icon"></span>
-                </Link>
-              </li> */}
+              <MenuItens />
             </ul>
           </div>
         </div>
