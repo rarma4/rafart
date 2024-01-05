@@ -4,7 +4,7 @@ import Header from './sections/Header'
 import Sobre from  './sections/Sobre'
 import Experiencias from './sections/Experiencias'
 import Servicos from './sections/Servicos'
-import Teste from './sections/Teste'
+import Teste from './sections/Skils'
 
 const comfortaa = Comfortaa({
   weight: '700',
