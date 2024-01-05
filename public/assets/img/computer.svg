@@ -1,11 +1,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="#ccc" stroke="#ccc">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier">
-<path d="M511.3 676.9m-10 0a10 10 0 1 0 20 0 10 10 0 1 0-20 0Z" fill="#f89406"/>
-<path d="M960 756V138.5H64V756h320.1v85.5H256.2v44h511.9v-44h-128V756H960zM108 182.5h808v427.1H108V182.5z m488.1 659h-168V756h168v85.5zM108 712v-82.5h808V712H108z" fill="#ccc"/>
-<path d="M167.536 327.703l90.72-90.721 14.143 14.142-90.721 90.72zM172.959 423.469l181.159-181.16 14.142 14.143L187.1 437.61z" fill="#f89406"/>
-</g>
+<g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:none;stroke:#ccc;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style> </defs> <title/> <g data-name="Layer 6" id="Layer_6"> <path class="cls-1" d="M1.42,38.13l61.08-.19v3.48a7,7,0,0,1-7,7H8.39a7,7,0,0,1-7-7V14.83a7,7,0,0,1,7-7H55.52a7,7,0,0,1,7,7v17.9"/> <path class="cls-1" d="M28.25,48.4S28,54.59,22,56.23"/> <path class="cls-1" d="M35.93,48.4s.26,6.19,6.3,7.83"/> <line class="cls-1" x1="18.04" x2="45.88" y1="56.23" y2="56.23"/> <line class="cls-1" x1="31.02" x2="32.9" y1="43" y2="43"/> </g> </g>
 </svg>

@@ -30,7 +30,7 @@ export default function Navigation() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" scroll={true} href="/#servicos">Serviços</Link>
+                <Link className="nav-link" scroll={true} href="/#conhecimentos">Conhecimentos</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" scroll={true} href="/#sobre">Sobre</Link>

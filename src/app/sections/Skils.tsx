@@ -25,6 +25,7 @@ export default function Skils() {
     initialSlide: 0,
     arrows: false,
     autoplay: true,
+    pauseOnHover: false,
     customPaging: function () {
       return (
         <button>
@@ -45,7 +46,7 @@ export default function Skils() {
           slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
           arrows: false,
           autoplay: true,
         }
@@ -76,7 +77,7 @@ export default function Skils() {
   return (
     <div className="container-fluid text-white bg-primary d-flex justify-content-evenly" id="servicos">
       <div className="container">
-        <div className="row mt-4 mb-5">
+        <div className="row mt-4 mb-4">
 
           <Slider  {...settings}>
 

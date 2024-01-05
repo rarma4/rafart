@@ -17,6 +17,7 @@ export const FormacaoAcademica = [
       "descricao": "Programador de Internet Web III",
       "detalhes":[
         "Implementação e testes de novas ferramentas para software (PHP, javascript, Jquery, Ajax, CSS, Html, C#, WordPress)",
+        "Implementação de novas ferramentas para software (React, nextJS)"
       ]
     },
     {
@@ -61,7 +62,7 @@ export const FormacaoAcademica = [
   export const ServicoS = [
     {
       "id": 1,
-      "altura": 50,
+      "altura": 80,
       "largura": 120,
       "src": "../../assets/img/design.svg",
       "titulo": "Design",
@@ -97,7 +98,7 @@ export const FormacaoAcademica = [
     {
       "id": 2,
       "titulo": "HTML",
-      "nivel": "100%",
+      "nivel": "50%",
     },
     {
       "id": 3,
@@ -124,74 +125,74 @@ export const FormacaoAcademica = [
 
   export const skils = [
     {
-      "altura": 50,
-      "largura": 100,
+      "altura": 30,
+      "largura": 35,
       "src": "../../assets/img/logos/css3.svg",
       "titulo": "css3",
     },
     {
-      "altura": 50,
-      "largura": 100,
+      "altura": 30,
+      "largura": 35,
       "src": "../../assets/img/logos/html5.svg",
       "titulo": "html5",
     },
     {
-      "altura": 50,
-      "largura": 100,
+      "altura": 30,
+      "largura": 35,
       "src": "../../assets/img/logos/js.svg",
       "titulo": "javacript",
     },
     {
-      "altura": 50,
-      "largura": 100,
+      "altura": 30,
+      "largura": 35,
       "src": "../../assets/img/logos/sass.svg",
       "titulo": "sass",
     },
     {
-      "altura": 50,
-      "largura": 100,
+      "altura": 30,
+      "largura": 35,
       "src": "../../assets/img/logos/wp.svg",
       "titulo": "wordpress",
     },
     {
-      "altura": 50,
-      "largura": 100,
+      "altura": 30,
+      "largura": 35,
       "src": "../../assets/img/logos/react.svg",
       "titulo": "react",
     },
     {
-      "altura": 50,
-      "largura": 100,
+      "altura": 30,
+      "largura": 35,
       "src": "../../assets/img/logos/next.svg",
       "titulo": "next js",
     },
     {
-      "altura": 50,
-      "largura": 100,
+      "altura": 30,
+      "largura": 35,
       "src": "../../assets/img/logos/php.svg",
       "titulo": "html5",
     },
     {
-      "altura": 50,
-      "largura": 100,
+      "altura": 30,
+      "largura": 35,
       "src": "../../assets/img/logos/html5.svg",
       "titulo": "php",
     },
     {
-      "altura": 50,
-      "largura": 100,
+      "altura": 30,
+      "largura": 35,
       "src": "../../assets/img/logos/mysql.svg",
       "titulo": "mysql",
     },
     {
-      "altura": 50,
-      "largura": 100,
+      "altura": 30,
+      "largura": 35,
       "src": "../../assets/img/logos/c-sharp.svg",
       "titulo": "C#",
     },
     {
-      "altura": 50,
-      "largura": 100,
+      "altura": 30,
+      "largura": 35,
       "src": "../../assets/img/logos/api.svg",
       "titulo": "API",
     },

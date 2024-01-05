@@ -3,11 +3,11 @@ import * as React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import '../styles/components/servico.scss'
+import '../styles/components/conhecimento.scss'
 import { ServicoS } from '../utils/Utils'
 import Image from 'next/image'
 
-export default function Servicos() {
+export default function Conhecimento() {
   var settings = {
     dots: true,
     infinite: true,
