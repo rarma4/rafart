@@ -9,7 +9,7 @@ export default function Navigation() {
     <>
       <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <Image
               src="../../assets/img/rafart-logo.svg"
               alt="logo rafart"
@@ -17,7 +17,7 @@ export default function Navigation() {
               height={24}
             />
           </a>
-          <a className="navbar-brand logo-header" href="#">Raf &apos;Art</a>
+          <a className="navbar-brand logo-header" href="/">Raf &apos;Art</a>
 
           {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
