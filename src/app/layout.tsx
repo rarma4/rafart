@@ -19,7 +19,12 @@ const comfortaa = Comfortaa({
 
 export const metadata: Metadata = {
   title: `Raf'Art – Developer and WebDesign`,
-  description: 'Pagina de Rafael Marinho',
+  description: 'Pagina de Rafael Marinho desenvolvedor senior frontend',
+  metadataBase: new URL('https://www.rafart.com.br/'),
+  alternates: {
+    canonical: '/',
+  },
+  robots: 'index, follow',
 }
 
 export default function RootLayout({
