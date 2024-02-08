@@ -34,6 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
+      <meta name="google-site-verification" content="uHCJDTlAdm6OiLkh1bvN1RR5kmiyNzUK9vfOpAyH9CA" />
       <body className={comfortaa.className}>
       {/* <body className="d-flex flex-column min-nh-100"> */}
         <Navigation />
