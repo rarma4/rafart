@@ -13,7 +13,7 @@ export const FormacaoAcademica = [
       "chave":"#one",
       "retorno":"one",
       "nome": "Tenda Negócios Imobiliários",
-      "data": "10/2021 – até presente data",
+      "data": "10/2021 – 07/2025",
       "descricao": "Programador de Internet Web III",
       "detalhes":[
         "Implementação e testes de novas ferramentas para software (PHP, javascript, Jquery, Ajax, CSS, Html, C#, WordPress)",
