@@ -11,7 +11,7 @@ export default function Sobre() {
             <h2 className="text-center text-warning">Sobre mim</h2>
             <div className="col-md-6 col-sm-6 p-3">
               <h3 className="mb-4">Quem sou eu?</h3>
-              <p>Bacharel em Sistemas de Informação, conhecimentos em PHP, Javascript, Python, HTML, CSS, Bootstrap, WordPress, SQL, React. </p>
+              <p>Sou Bacharel em Sistemas de Informação, conhecimentos em PHP, WordPress, SQL, React, NextJs, Typescript, HTML, CSS, SCSS, Bootstrap, Tailwind, Amazon S3, Git, API Rest. </p>
               <p>Conhecimento em Web Design, Designer Gráfico, com especialidade em desenvolvimento de sites institucionais, blogs, portais corporativos, lojas virtuais, landing pages e catálogos online para empresas e/ou profissionais liberais.</p>
               <p> Criação de identidades visuais para empresas, logomarcas, cartões de visita, banners e peças gráficas para campanhas publicitárias</p>
               <Link className="btn btn-outline-warning smoothScroll tm-view-more-btn" href="../../assets/docs/Rafael_Curriculum_ti.pdf" target="_blank">Download CV</Link>
