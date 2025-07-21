@@ -3,7 +3,7 @@ export const FormacaoAcademica = [
       "id": 1,
       "nome": "Anhanguera Educacional",
       "data": "2015 - 2018",
-      "descricao": "Bacharel em Sistemas de Informação,\n conhecimentos em PHP, Javascript, Python, HTML, CSS, Bootstrap, WordPress, SQL, React. ",
+      "descricao": "Bacharel em Sistemas de Informação, Desenvolvedor Senior Frontend | React.js | NextJs | PHP | Wordpress | Node.js | TypeScript | API Rest  | Amzon S3.",
     }
   ]
 
