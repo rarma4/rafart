@@ -6,7 +6,7 @@ type MenuProps = {
   mobile?: any;
 }
 
-export default function ManuItens(props: MenuProps) {
+export default function MenuItens(props: MenuProps) {
   const [btnActive, setBtnActive] = useState("home")
 
   return (
