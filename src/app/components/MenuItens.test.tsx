@@ -17,6 +17,7 @@ describe("MenuItens Component", () => {
 
   it("contains Conhecimentos link", () => {
     const { getByText } = render(<MenuItens />);
+    expect(getByText("Conhecimentos")).toBeInTheDocument();
   })
 })
 
