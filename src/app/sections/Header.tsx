@@ -13,7 +13,7 @@ export default function Header() {
               <h2 className="home-subtitle pb-3 text-warning">Desenvolvedor Pleno | Senior Frontend </h2>
               {/* <p className="pb-3">Profissional em <strong>UX Designer</strong> e <strong> desenvolvimento Front-End</strong> criando designs modernos e responsivos para <strong>Web</strong> e <strong>dispositivos Mobile</strong>. Vamos trabalhar juntos. Obrigado.
               </p> */}
-              <p className="pb-3">Apaixonado por tecnologia e inovação, busco oferecer soluções práticas e eficazes que trarão ótimos resultados. Vamos trabalhar juntos. Obrigado.
+              <p className="pb-3">Estou sempre em busca de novos desafios e acredito que minha experiência pode contribuir diretamente para os objetivos da empresa, unindo tecnologia, criatividade e foco em resultados.. Vamos trabalhar juntos. Obrigado.
               </p>
               {/* <a href="#sobre" className="btn btn-outline-warning smoothScroll tm-view-more-btn">Vamos começar</a> */}
               <Link className="btn btn-outline-warning smoothScroll tm-view-more-btn" href="/#servicos">Vamos começar</Link>
