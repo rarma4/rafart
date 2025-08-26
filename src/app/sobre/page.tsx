@@ -33,25 +33,25 @@ export default function Sobre() {
                 <ul>
                   <li>1. Use Componentes Funcionais + Hooks
                     <p>- Prefira *componentes funcionais* em vez de classes.</p>
-                    <p>- Use *Hooks* como `useState`, `useEffect`, etc.</p>
+                    <p>- Use *Hooks* como useState, useEffect, etc.</p>
                   </li>
                   <li>2. Separe lógica e apresentação
                     <p>- Evite componentes muito grandes</p>
                     <p>- Separe lógica (hooks, requisições) da visualização (JSX).</p>
                   </li>
                   <li>3. Nomeie bem os arquivos e componentes
-                    <p>- Componentes com letra maiúscula: `BotaoConfirmar.js`</p>
+                    <p>- Componentes com letra maiúscula: BotaoConfirmar.js</p>
                     <p>- Arquivos organizados por função ou módulo.</p>
                   </li>
-                  <li>4. Use `prop-types` ou TypeScript
-                    <p>- Ajuda a validar e documentar as `props`.</p>
+                  <li>4. Use prop-types ou TypeScript
+                    <p>- Ajuda a validar e documentar as props.</p>
 
                   </li>
                   <li>5. Evite lógica complexa no JSX
-                    <p>- Declare variáveis antes do `return`, facilita a leitura.</p>
+                    <p>- Declare variáveis antes do return, facilita a leitura.</p>
 
                   </li>
-                  <li>6. Trate efeitos colaterais com `useEffect`
+                  <li>6. Trate efeitos colaterais com useEffect
                     <p>- Ex: chamadas à API, manipulação de DOM.</p>
 
                   </li>
@@ -68,7 +68,7 @@ export default function Sobre() {
 
                   </li>
                   <li>10. Escreva testes
-                    <p>- Use ferramentas como `Jest` e `React Testing Library`.</p>
+                    <p>- Use ferramentas como Jest e React Testing Library.</p>
 
                   </li>
                 </ul>
@@ -86,7 +86,7 @@ export default function Sobre() {
                   </li>
                   <li>3. Imagens otimizadas
                     <p>- Sempre usar formatos modernos (WebP, AVIF) e tamanho adequado.</p>
-                    <p>- Use lazy loading (loading="lazy") para imagens fora da tela.</p>
+                    <p>- Use lazy loading para imagens fora da tela.</p>
                     <p>- Em Next.js, prefira o componente IMAGE.</p>
                   </li>
                   <li>4.  Minificar e comprimir assets
@@ -111,7 +111,7 @@ export default function Sobre() {
 
                   </li>
                   <li>8. Prefetch e pré-carregamento
-                    <p>- Use rel="preload" rel="prefetch" para recursos importantes.</p>
+                    <p>- Use rel=preload rel=prefetch para recursos importantes.</p>
                     <p>- Em Next.js, links internos já fazem prefetch automático.</p>
 
                   </li>
@@ -141,7 +141,7 @@ export default function Sobre() {
                       <li>Quebrar componentes grandes em menores para isolar renderizações</li>
                       <li>Lazy loading de rotas/páginas e componentes não essenciais</li>
                       <li>Imagens no formato WebP/AVIF e tamanho ajustado</li>
-                      <li>Imagens fora da tela com loading="lazy"</li>
+                      <li>Imagens fora da tela com loading=lazy</li>
                       <li>Listas grandes com virtualização (react-window ou react-virtualized)</li>
                     </ul>
                   </li>
@@ -149,7 +149,7 @@ export default function Sobre() {
                     Prioridade Média (Aprimoramento Contínuo)
                     <ul>
                       Cache de dados com React Query ou SWR
-                      <li>Pré-carregamento de recursos importantes ( rel="preload")</li>
+                      <li>Pré-carregamento de recursos importantes ( rel=preload)</li>
                       <li>Prefetch de rotas internas</li>
                       <li>CSS Modules ou Tailwind para reduzir CSS global</li>
                       <li>Remover CSS não utilizado com PurgeCSS</li>
@@ -238,7 +238,7 @@ export default function Sobre() {
                   <li>Pergunta: Explique o que são props e qual a sua principal característica.</li>
                   <p>Resposta: Props (abreviação de properties) são o principal mecanismo para passar dados de um componente pai para um componente filho. A principal característica é que são imutáveis (somente leitura). Um componente filho não pode alterar as props que recebeu. Isso garante um fluxo de dados unidirecional, tornando o estado da aplicação mais previsível.</p>
                   <li>Pergunta: O que é o Virtual DOM e como ele melhora a performance em uma aplicação React?</li>
-                  <p>Resposta: O Virtual DOM é uma representação leve do DOM real que o React mantém na memória. Quando o estado de um componente muda, o React cria um novo Virtual DOM e o compara com o anterior. Esse processo, chamado de "diffing", identifica as diferenças. Em seguida, o React atualiza apenas as partes do DOM real que foram alteradas, em vez de redesenhar a página inteira. Isso é muito mais rápido do que manipular o DOM diretamente.</p>
+                  <p>Resposta: O Virtual DOM é uma representação leve do DOM real que o React mantém na memória. Quando o estado de um componente muda, o React cria um novo Virtual DOM e o compara com o anterior. Esse processo, chamado de diffing, identifica as diferenças. Em seguida, o React atualiza apenas as partes do DOM real que foram alteradas, em vez de redesenhar a página inteira. Isso é muito mais rápido do que manipular o DOM diretamente.</p>
                 </ul>
 
                 <h6>2. Perguntas sobre Hooks e Gerenciamento de Estado</h6>
@@ -247,7 +247,7 @@ export default function Sobre() {
                   <p>Resposta: useState é usado para adicionar estado a um componente funcional. Ele retorna um array com a variável de estado e uma função para atualizá-la.</p>
                   <p>useEffect é um hook para gerenciar efeitos colaterais em componentes funcionais. Ele executa uma função após a renderização do componente, sendo útil para buscar dados de uma API, assinar eventos ou interagir com o DOM.</p>
                   <li>Pergunta: Explique o que é o useContext e em que cenário ele é mais útil.</li>
-                  <p>Resposta: O useContext permite que você acesse dados do contexto sem a necessidade de passar props manualmente através de cada nível da árvore de componentes ("prop drilling"). Ele é ideal para compartilhar dados globais na aplicação, como temas (claro/escuro), informações do usuário autenticado ou configurações de idioma.</p>
+                  <p>Resposta: O useContext permite que você acesse dados do contexto sem a necessidade de passar props manualmente através de cada nível da árvore de componentes (prop drilling). Ele é ideal para compartilhar dados globais na aplicação, como temas (claro/escuro), informações do usuário autenticado ou configurações de idioma.</p>
                   <li>Pergunta: Fale sobre o useCallback e o useMemo. Quando e por que você os usaria?</li>
                   <p>Resposta: useCallback e useMemo são hooks de otimização. O useCallback memoriza uma função, retornando a mesma referência da função enquanto suas dependências não mudam. Isso é útil para evitar re-renderizações desnecessárias de componentes filhos, especialmente aqueles otimizados com React.memo. Já o useMemo memoriza o resultado de uma computação cara, evitando que ela seja executada novamente a cada renderização. Eu os usaria quando um componente está re-renderizando com frequência e essas funções ou cálculos estão afetando a performance.</p>
                 </ul>
@@ -256,16 +256,16 @@ export default function Sobre() {
                   <li>Pergunta: O que é o padrão de renderização condicional em React? Dê um exemplo.</li>
                   <p>Resposta: Renderização condicional é a técnica de renderizar diferentes componentes ou elementos, dependendo de uma condição. Isso pode ser feito usando operadores como if/else, operador ternário (? :), ou o operador lógico &&</p>
 
-                  <li>Pergunta: O que são "Higher-Order Components" (HOCs) e qual a alternativa moderna para eles?</li>
+                  <li>Pergunta: O que são Higher-Order Components (HOCs) e qual a alternativa moderna para eles?</li>
                   <p>Resposta: Um HOC é uma função que recebe um componente como argumento e retorna um novo componente com funcionalidade extra. Por exemplo, você pode criar um HOC para adicionar um loader de carregamento ou gerenciar o estado de um formulário. A alternativa moderna e mais comum são os Hooks, que oferecem uma maneira mais simples e limpa de reutilizar a lógica de estado em componentes funcionais.</p>
 
                   <li>Pergunta: Qual a diferença entre gerenciamento de estado local e global? Quando você usaria uma ferramenta como Redux ou Zustand?</li>
-                  <p>Resposta: O estado local é o estado interno de um componente, gerenciado com useState. Ele é usado para dados que não precisam ser compartilhados com outros componentes. O estado global é compartilhado por múltiplos componentes. Eu usaria uma ferramenta de gerenciamento de estado global como Redux ou Zustand quando a aplicação começa a ter muitos componentes que precisam compartilhar o mesmo estado, como informações do usuário, dados do carrinho de compras ou tema da aplicação, evitando o "prop drilling" e centralizando a lógica de estado.</p>
+                  <p>Resposta: O estado local é o estado interno de um componente, gerenciado com useState. Ele é usado para dados que não precisam ser compartilhados com outros componentes. O estado global é compartilhado por múltiplos componentes. Eu usaria uma ferramenta de gerenciamento de estado global como Redux ou Zustand quando a aplicação começa a ter muitos componentes que precisam compartilhar o mesmo estado, como informações do usuário, dados do carrinho de compras ou tema da aplicação, evitando o prop drilling e centralizando a lógica de estado.</p>
                 </ul>
                 <h6>4. Fundamentos e Conceitos Core</h6>
                 <ul>
                   <li>O que é JSX e por que o React o utiliza?</li>
-                  <p>R: JSX (JavaScript XML) é uma extensão de sintaxe para JavaScript que nos permite escrever uma estrutura semelhante a HTML diretamente no código. Não é HTML, mas uma "fachada" que, quando compilada (pelo Babel, por exemplo), se transforma em chamadas de função React.createElement(). O React o utiliza porque torna a criação da UI mais declarativa e visual, facilitando a compreensão da estrutura de um componente apenas lendo o código.</p>
+                  <p>R: JSX (JavaScript XML) é uma extensão de sintaxe para JavaScript que nos permite escrever uma estrutura semelhante a HTML diretamente no código. Não é HTML, mas uma fachada que, quando compilada (pelo Babel, por exemplo), se transforma em chamadas de função React.createElement(). O React o utiliza porque torna a criação da UI mais declarativa e visual, facilitando a compreensão da estrutura de um componente apenas lendo o código.</p>
 
                   <li>Qual a diferença entre Componentes de Classe e Componentes Funcionais? Qual você prefere e por quê?</li>
                   <p>R: Componentes de Classe são classes ES6 que herdam de React.Component e gerenciam estado e ciclo de vida através de this.state e métodos como componentDidMount. Componentes Funcionais são funções JavaScript simples. Com a introdução dos Hooks (como useState e useEffect), eles se tornaram a forma padrão e recomendada de escrever componentes. Eu prefiro Componentes Funcionais porque o código é mais conciso, mais fácil de ler e testar, e evita a complexidade e os problemas comuns associados ao this em JavaScript.</p>
@@ -295,33 +295,33 @@ export default function Sobre() {
                 </ul>
                 <h6>5. Performance e Otimização</h6>
                 <ul>
-                  <li>O que é "memoization" no contexto do React? Cite exemplos.</li>
+                  <li>O que é memoization no contexto do React? Cite exemplos.</li>
                   <p>R: Memoization é uma técnica de otimização que consiste em armazenar o resultado de uma operação cara e retorná-lo de um cache quando os mesmos inputs ocorrem novamente. No React, isso evita re-renderizações e cálculos desnecessários</p>
 
-                  <p>React.memo: É um Higher-Order Component (HOC) que "memoiza" um componente. Ele impede que o componente seja re-renderizado se suas props não mudarem.</p>
+                  <p>React.memo: É um Higher-Order Component (HOC) que memoiza um componente. Ele impede que o componente seja re-renderizado se suas props não mudarem.</p>
 
-                  <p>useMemo: É um Hook que "memoiza" o resultado de um cálculo. Ele re-executa o cálculo apenas se uma de suas dependências mudar.</p>
+                  <p>useMemo: É um Hook que memoiza o resultado de um cálculo. Ele re-executa o cálculo apenas se uma de suas dependências mudar.</p>
 
-                  <p>useCallback: É um Hook que "memoiza" a definição de uma função, garantindo que ela mantenha a mesma referência entre renderizações.</p>
-                  <li>P: O que são "keys" em listas e por que são importantes?</li>
+                  <p>useCallback: É um Hook que memoiza a definição de uma função, garantindo que ela mantenha a mesma referência entre renderizações.</p>
+                  <li>P: O que são keys em listas e por que são importantes?</li>
                   <p>R: Keys são atributos especiais que você precisa incluir ao criar listas de elementos. Elas ajudam o React a identificar quais itens foram alterados, adicionados ou removidos. Sem keys, o React teria que recriar toda a lista a cada mudança, o que é ineficiente. Com keys estáveis e únicas (como um ID do banco de dados), o React pode otimizar a renderização, atualizando apenas os elementos que realmente mudaram, melhorando significativamente a performance.</p>
 
                 </ul>
                 <h6>6. Arquitetura e Padrões</h6>
                 <ul>
-                  <li>O que é "Prop Drilling" e quais são as principais estratégias para evitá-lo?</li>
-                  <p>R: "Prop Drilling" é o processo de passar dados de um componente de alto nível para um componente aninhado profundamente, através de vários componentes intermediários que não precisam desses dados. <br />
+                  <li>O que é Prop Drilling e quais são as principais estratégias para evitá-lo?</li>
+                  <p>R: Prop Drilling é o processo de passar dados de um componente de alto nível para um componente aninhado profundamente, através de vários componentes intermediários que não precisam desses dados. <br />
                     As principais estratégias para evitar isso são:</p>
 
-                  <p> Context API: A solução nativa do React para compartilhar dados considerados "globais" para uma árvore de componentes, como tema, idioma ou informações de autenticação.
+                  <p> Context API: A solução nativa do React para compartilhar dados considerados globais para uma árvore de componentes, como tema, idioma ou informações de autenticação.
                     <br />
-                    Gerenciamento de Estado Global: Usar bibliotecas como Redux ou Zustand para centralizar o estado da aplicação em uma "store" externa, permitindo que qualquer componente acesse os dados diretamente, sem a necessidade de props.
+                    Gerenciamento de Estado Global: Usar bibliotecas como Redux ou Zustand para centralizar o estado da aplicação em uma store externa, permitindo que qualquer componente acesse os dados diretamente, sem a necessidade de props.
                     <br />
                     Composição de Componentes: Reestruturar os componentes para que o estado seja gerenciado o mais próximo possível de onde ele é necessário, passando componentes como props (usando props.children, por exemplo).</p>
 
 
                   <li>P: O que são Hooks Customizados (Custom Hooks) e qual a principal vantagem de usá-los?</li>
-                  <p>R: Hooks Customizados são funções JavaScript que começam com o prefixo use e que podem chamar outros Hooks dentro delas. A principal vantagem é a reutilização de lógica com estado entre componentes. Em vez de duplicar a mesma lógica (como buscar dados de uma API, gerenciar a inscrição em um evento ou controlar um formulário) em vários componentes, você pode extraí-la para um Hook Customizado e simplesmente chamá-lo onde for necessário. Isso segue o princípio DRY (Don't Repeat Yourself) e torna o código mais limpo e fácil de manter.</p>
+                  <p>R: Hooks Customizados são funções JavaScript que começam com o prefixo use e que podem chamar outros Hooks dentro delas. A principal vantagem é a reutilização de lógica com estado entre componentes. Em vez de duplicar a mesma lógica (como buscar dados de uma API, gerenciar a inscrição em um evento ou controlar um formulário) em vários componentes, você pode extraí-la para um Hook Customizado e simplesmente chamá-lo onde for necessário. Isso segue o princípio DRY (Dont Repeat Yourself) e torna o código mais limpo e fácil de manter.</p>
 
                 </ul>
 
@@ -337,7 +337,7 @@ export default function Sobre() {
 
                 <p>Reutilização de Lógica: Hooks como useState e useEffect permitem que você adicione estado e efeitos colaterais aos seus componentes de forma limpa e modular. Além disso, você pode criar Hooks Customizados para reutilizar lógicas complexas em diferentes componentes, como a busca de dados de uma API.</p>
 
-                <p>Gerenciamento de Estado Simples: Para dados que só precisam ser acessados por um único componente, useState é perfeito. Para dados que precisam ser compartilhados entre vários componentes, você pode usar a Context API para evitar o famoso "Prop Drilling" sem a necessidade de uma biblioteca externa.</p>
+                <p>Gerenciamento de Estado Simples: Para dados que só precisam ser acessados por um único componente, useState é perfeito. Para dados que precisam ser compartilhados entre vários componentes, você pode usar a Context API para evitar o famoso Prop Drilling sem a necessidade de uma biblioteca externa.</p>
 
                 <p>Quando e Por que Escolher Outro Padrão?</p>
                 <p>O padrão de Componentes Funcionais + Hooks + Context API é uma base sólida e escalável. Geralmente, você só deve considerar uma biblioteca de gerenciamento de estado mais robusta como Redux ou Zustand se:</p>
