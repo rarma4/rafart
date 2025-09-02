@@ -9,128 +9,242 @@ export default function Sobre() {
             <h2 className="text-center text-warning">REACT</h2>
             <ul className="nav nav-tabs" role="tablist">
               <li className="nav-item" role="presentation">
-                <a className="nav-link active" data-bs-toggle="tab" href="#BoasPraticas" aria-selected="true" role="tab">Boas Praticas</a>
-              </li>
-              <li className="nav-item" role="presentation">
-                <a className="nav-link" data-bs-toggle="tab" href="#Performance" aria-selected="false" role="tab">Performance</a>
-              </li>
-              <li className="nav-item" role="presentation">
-                <a className="nav-link" data-bs-toggle="tab" href="#TecnicasProjetos" aria-selected="false" role="tab">Tecnicas Projetos</a>
-              </li>
-              <li className="nav-item" role="presentation">
-                <a className="nav-link" data-bs-toggle="tab" href="#Questoes" aria-selected="false" role="tab">Questoes</a>
-              </li>
-              <li className="nav-item" role="presentation">
-                <a className="nav-link" data-bs-toggle="tab" href="#Outras" aria-selected="false" role="tab">Outras</a>
-              </li>
-              <li className="nav-item" role="presentation">
-                <a className="nav-link" data-bs-toggle="tab" href="#Inicio" aria-selected="false" role="tab">Inicio</a>
-              </li>
-              <li className="nav-item" role="presentation">
-                <a className="nav-link" data-bs-toggle="tab" href="#Hooks" aria-selected="false" role="tab">Hooks</a>
+                <button
+                  className="nav-link active"
+                  data-bs-toggle="tab"
+                  data-bs-target="#BoasPraticas"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  tabIndex={0}
+                >
+                  Boas Praticas
+                </button>
               </li>
 
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Performance"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  tabIndex={-1}
+                >
+                  Performance
+                </button>
+              </li>
+
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#TecnicasProjetos"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  tabIndex={-1}
+                >
+                  Tecnicas Projetos
+                </button>
+              </li>
+
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Questoes"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  tabIndex={-1}
+                >
+                  Questoes
+                </button>
+              </li>
+
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Outras"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  tabIndex={-1}
+                >
+                  Outras
+                </button>
+              </li>
+
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Inicio"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  tabIndex={-1}
+                >
+                  Inicio
+                </button>
+              </li>
+
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Hooks"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  tabIndex={-1}
+                >
+                  Hooks
+                </button>
+              </li>
+
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Padroes"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  tabIndex={-1}
+                >
+                  Padroes
+                </button>
+              </li>
             </ul>
+
             <div id="myTabContent" className="tab-content">
               <div className="tab-pane fade show active" id="BoasPraticas" role="tabpanel">
-                <ul>
-                  <li>1. Use Componentes Funcionais + Hooks
-                    <p>- Prefira *componentes funcionais* em vez de classes.</p>
-                    <p>- Use *Hooks* como useState, useEffect, etc.</p>
+                <ol>
+                  <li>Use Componentes Funcionais + Hooks
+                    <ul>
+                      <li>Prefira *componentes funcionais* em vez de classes.</li>
+                      <li>Use *Hooks* como useState, useEffect, etc.</li>
+                    </ul>
                   </li>
-                  <li>2. Separe lógica e apresentação
-                    <p>- Evite componentes muito grandes</p>
-                    <p>- Separe lógica (hooks, requisições) da visualização (JSX).</p>
+                  <li>Separe lógica e apresentação
+                    <ul>
+                      <li>Evite componentes muito grandes</li>
+                      <li>Separe lógica (hooks, requisições) da visualização (JSX)</li>
+                    </ul>
                   </li>
-                  <li>3. Nomeie bem os arquivos e componentes
-                    <p>- Componentes com letra maiúscula: BotaoConfirmar.js</p>
-                    <p>- Arquivos organizados por função ou módulo.</p>
+                  <li>Nomeie bem os arquivos e componentes
+                    <ul>
+                      <li>Componentes com letra maiúscula: BotaoConfirmar.js</li>
+                      <li>Arquivos organizados por função ou módulo.</li>
+                    </ul>
                   </li>
-                  <li>4. Use prop-types ou TypeScript
-                    <p>- Ajuda a validar e documentar as props.</p>
-
+                  <li>Use prop-types ou TypeScript
+                    <ul>
+                      <li>Ajuda a validar e documentar as props.</li>
+                    </ul>
                   </li>
-                  <li>5. Evite lógica complexa no JSX
-                    <p>- Declare variáveis antes do return, facilita a leitura.</p>
-
+                  <li>Evite lógica complexa no JSX
+                    <ul>
+                      <li>Declare variáveis antes do return, facilita a leitura.</li>
+                    </ul>
                   </li>
-                  <li>6. Trate efeitos colaterais com useEffect
-                    <p>- Ex: chamadas à API, manipulação de DOM.</p>
-
+                  <li>Trate efeitos colaterais com useEffect
+                    <ul>
+                      <li>Ex: chamadas à API, manipulação de DOM.</li>
+                    </ul>
                   </li>
-                  <li>7. Use Context API ou bibliotecas (ex: Redux, Zustand) para estado global
-                    <p>- Evite passar props demais entre muitos níveis (prop drilling).</p>
-
+                  <li>Use Context API ou bibliotecas (ex: Redux, Zustand) para estado global
+                    <ul>
+                      <li>Evite passar props demais entre muitos níveis (prop drilling).</li>
+                    </ul>
                   </li>
-                  <li>8. Reutilize componentes sempre que possível
-                    <p>- Exemplo: um botão, um modal, um campo de entrada.</p>
-
+                  <li>Reutilize componentes sempre que possível
+                    <ul>
+                      <li>Exemplo: um botão, um modal, um campo de entrada.</li>
+                    </ul>
                   </li>
-                  <li>9. Use ESLint + Prettier
-                    <p>- Garante código limpo, consistente e com menos erros.</p>
-
+                  <li>Use ESLint + Prettier
+                    <ul>
+                      <li>Garante código limpo, consistente e com menos erros.</li>
+                    </ul>
                   </li>
-                  <li>10. Escreva testes
-                    <p>- Use ferramentas como Jest e React Testing Library.</p>
-
+                  <li>Escreva testes <ul>
+                    <li>Use ferramentas como Jest e React Testing Library.</li>
+                  </ul>
                   </li>
-                </ul>
+                </ol>
               </div>
               <div className="tab-pane fade" id="Performance" role="tabpanel">
-                <ul>
+                <ol>
                   <li>Otimizar renderizações
-                    <p>- Evite re-renderizações desnecessárias usando React.memo, useMemo e useCallback.</p>
-                    <p>- Garanta que props não mudem sem necessidade (objetos/arrays criados dinamicamente podem disparar renders extras).</p>
-                    <p>- Quebre componentes grandes em partes menores para isolar re-renderizações.</p>
+                    <ul>
+                      <li>Evite re-renderizações desnecessárias usando React.memo, useMemo e useCallback.</li>
+                      <li>Garanta que props não mudem sem necessidade (objetos/arrays criados dinamicamente podem disparar renders extras).</li>
+                      <li>Quebre componentes grandes em partes menores para isolar re-renderizações.</li>
+                    </ul>
                   </li>
-                  <li>2. Lazy loading e code splitting
-                    <p>- Importe páginas/componentes sob demanda com React.lazy e Suspense.</p>
-
+                  <li>Lazy loading e code splitting
+                    <ul>
+                      <li>Importe páginas/componentes sob demanda com React.lazy e Suspense.</li>
+                    </ul>
                   </li>
-                  <li>3. Imagens otimizadas
-                    <p>- Sempre usar formatos modernos (WebP, AVIF) e tamanho adequado.</p>
-                    <p>- Use lazy loading para imagens fora da tela.</p>
-                    <p>- Em Next.js, prefira o componente IMAGE.</p>
+                  <li>Imagens otimizadas
+                    <ul>
+                      <li>Sempre usar formatos modernos (WebP, AVIF) e tamanho adequado.</li>
+                      <li>Use lazy loading para imagens fora da tela.</li>
+                      <li>Em Next.js, prefira o componente IMAGE.</li>
+                    </ul>
                   </li>
-                  <li>4.  Minificar e comprimir assets
-                    <p>- Configure Gzip ou Brotli no servidor.</p>
-                    <p>- Garanta que o build do React está em modo produção (NODE_ENV=production).</p>
-
+                  <li>Minificar e comprimir assets
+                    <ul>
+                      <li>Configure Gzip ou Brotli no servidor.</li>
+                      <li>Garanta que o build do React está em modo produção (NODE_ENV=production).</li>
+                    </ul>
                   </li>
-                  <li>5. Evitar cálculos pesados no render
-                    <p>- Mova cálculos para fora do JSX usando useMemo ou pré-processamento.</p>
-                    <p>- Para listas grandes, use virtualização com react-window ou react-virtualized.</p>
-                    <p>- const processedData = useMemo</p>
-
+                  <li>Evitar cálculos pesados no render
+                    <ul>
+                      <li>Mova cálculos para fora do JSX usando useMemo ou pré-processamento.</li>
+                      <li>Para listas grandes, use virtualização com react-window ou react-virtualized.</li>
+                      <li>const processedData = useMemo</li>
+                    </ul>
                   </li>
-                  <li>6. TCache de dados
-                    <p>- Evite requisições repetidas usando React Query, SWR ou cache manual.</p>
-                    <p>- Prefira SSR/SSG em vez de fazer tudo no cliente (Next.js).</p>
-
+                  <li>Cache de dados
+                    <ul>
+                      <li>Evite requisições repetidas usando React Query, SWR ou cache manual.</li>
+                      <li>Prefira SSR/SSG em vez de fazer tudo no cliente (Next.js).</li>
+                    </ul>
                   </li>
-                  <li>7. Uso eficiente do CSS
-                    <p>- Prefira CSS Modules ou Tailwind para evitar CSS muito grande.</p>
-                    <p>- Remova CSS não utilizado com PurgeCSS.</p>
-
+                  <li>Uso eficiente do CSS
+                    <ul>
+                      <li>Prefira CSS Modules ou Tailwind para evitar CSS muito grande.</li>
+                      <li>Remova CSS não utilizado com PurgeCSS.</li>
+                    </ul>
                   </li>
-                  <li>8. Prefetch e pré-carregamento
-                    <p>- Use rel=preload rel=prefetch para recursos importantes.</p>
-                    <p>- Em Next.js, links internos já fazem prefetch automático.</p>
-
+                  <li>Prefetch e pré-carregamento
+                    <ul>
+                      <li>Use rel=preload rel=prefetch para recursos importantes.</li>
+                      <li>Em Next.js, links internos já fazem prefetch automático.</li>
+                    </ul>
                   </li>
-                  <li>9. Lighthouse e DevTools
-                    <p>- Use o Lighthouse para medir performance.</p>
-                    <p>- Analise o React Profiler para encontrar gargalos.</p>
-
+                  <li>Lighthouse e DevTools
+                    <ul>
+                      <li>Use o Lighthouse para medir performance.</li>
+                      <li>Analise o React Profiler para encontrar gargalos.</li>
+                    </ul>
                   </li>
                   <li>10. Técnicas avançadas
-                    <p>- Server Components (em Next.js 13+) para reduzir JavaScript no cliente.</p>
-                    <p>- Hydration parcial para evitar carregar todo o app de uma vez.</p>
-                    <p>- Suspense + streaming para entregar conteúdo mais rápido.</p>
-
+                    <ul>
+                      <li>Server Components (em Next.js 13+) para reduzir JavaScript no cliente.</li>
+                      <li>Hydration parcial para evitar carregar todo o app de uma vez.</li>
+                      <li>Suspense + streaming para entregar conteúdo mais rápido.</li>
+                    </ul>
                   </li>
-                </ul>
-                
+                </ol>
+
               </div>
               <div className="tab-pane fade mt-3" id="TecnicasProjetos" role="tabpanel">
                 <p>Se fosse para resumir as técnicas que mais diferenciam um frontend React de alta qualidade, eu dividiria em 4 pilares — arquitetura, performance, UX e manutenibilidade.</p>
@@ -140,12 +254,12 @@ export default function Sobre() {
                     <div className="card-header">Arquitetura bem pensada</div>
                     <div className="card-body">
                       {/* <h4 className="card-title">Arquitetura bem pensada</h4> */}
-                      <p className="card-text">
+                      <div className="card-text">
                         <p>Organização por feature (feature-based structure)<br />Evitar um “pasta components” gigante e genérica.</p>
                         <p>Componentização inteligente<br />Reaproveitar o máximo sem exagerar em fragmentar.</p>
                         <p>Hooks personalizados<br />Para encapsular lógica de negócio/reutilizável (useAuth, useFetch, etc.).</p>
                         <p>State management bem escolhido<br />Usar useState/useReducer para coisas simples, mas Redux/Zustand/Recoil para estados complexos.</p>
-                      </p>
+                      </div>
                     </div>
                   </div>
 
@@ -153,13 +267,13 @@ export default function Sobre() {
                     <div className="card-header">Performance</div>
                     <div className="card-body">
                       {/* <h4 className="card-title">useEffect</h4> */}
-                      <p className="card-text">
+                      <div className="card-text">
                         <p>React.memo, useMemo, useCallback para evitar renders desnecessários.</p>
                         <p>Code splitting + lazy loading para reduzir bundle inicial.</p>
                         <p>Virtualização de listas grandes (react-window).</p>
                         <p>Pré-renderização (SSR/SSG com Next.js) para entregar conteúdo rápido.</p>
                         <p>Uso de formatos leves (imagens WebP/AVIF, SVG para ícones).</p>
-                      </p>
+                      </div>
                     </div>
                   </div>
 
@@ -167,13 +281,13 @@ export default function Sobre() {
                     <div className="card-header">UX (Experiência do Usuário)</div>
                     <div className="card-body">
                       {/* <h4 className="card-title">useRef</h4> */}
-                      <p className="card-text">
+                      <div className="card-text">
                         <p>Feedback rápido: loaders, skeletons e transições suaves.</p>
                         <p>Design responsivo e adaptado para mobile-first.</p>
                         <p>Acessibilidade (a11y): labels, aria-attributes, contraste de cores.</p>
                         <p>Interações fluidas usando animações leves (Framer Motion, CSS transitions).</p>
                         <p>Formulários amigáveis: validação instantânea e mensagens claras.</p>
-                      </p>
+                      </div>
                     </div>
                   </div>
 
@@ -181,13 +295,13 @@ export default function Sobre() {
                     <div className="card-header"> Manutenibilidade e Qualidade</div>
                     <div className="card-body">
                       {/* <h4 className="card-title">useContext</h4> */}
-                      <p className="card-text">
+                      <div className="card-text">
                         <p>Tipagem forte (TypeScript) para evitar bugs em tempo de desenvolvimento.</p>
                         <p>Testes unitários (Jest, React Testing Library) e testes E2E (Cypress/Playwright).</p>
                         <p>Padronização de código com ESLint + Prettier.</p>
                         <p>Documentação clara (README, Storybook para UI).</p>
                         <p>Commits semânticos (Conventional Commits).</p>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -195,26 +309,27 @@ export default function Sobre() {
               </div>
               <div className="tab-pane fade" id="Questoes" role="tabpanel">
                 <p>questoes</p>
-                <ul>
+                <ol>
                   <li>Como você organiza suas tarefas em um ambiente ágil? <br />
                     Quais ferramentas você costuma utilizar para controle de versão e organização do trabalho?</li>
-                  <p>usando ferramentas como Jira, Trello ou GitHub Projects.<br></br>Para controle de versão, utilizo Git com repositórios no GitHub,
-                    seguindo boas práticas de branching e code review</p>
+                  <ul><li>usando ferramentas como Jira, Trello ou GitHub Projects.<br></br>Para controle de versão, utilizo Git com repositórios no GitHub,seguindo boas práticas de branching e code review</li></ul>
+
                   <li>Quais práticas você adota para garantir a qualidade do código?</li>
-                  <p>Adoto escrita de código limpo e legível, padronização cpm ESLint, Prettier,
+                  <ul><li>Adoto escrita de código limpo e legível, padronização cpm ESLint, Prettier,
                     versionamento organizado, revisões de código, cobertura de testes automatizados
                     (unitários e integração) e monitoramento contínuo via CI/CD para garantir que o
-                    código chegue estável em produção.</p>
+                    código chegue estável em produção.</li></ul>
                   <li>Como você lida com prazos curtos ou mudanças de escopo em projetos?</li>
-                  <p>A prioridade é alinhar com o time e o gestor o impacto das alterações.<br />
+                  <ul><li>A prioridade é alinhar com o time e o gestor o impacto das alterações.<br />
                     Costumo dividir o trabalho em entregas menores, priorizar o que gera mais valor imediato e
-                    comunicar claramente riscos ou limitações. Assim, conseguimos manter qualidade sem comprometer o prazo</p>
+                    comunicar claramente riscos ou limitações. Assim, conseguimos manter qualidade sem comprometer o prazo</li></ul>
                   <li>Você prefere trabalhar de forma independente ou em equipe? Por quê?</li>
-                  <p>Em equipe porque acredito que a troca de ideias e revisão de código elevam a qualidade do produto, mas também consigo atuar de forma independente quando necessário, mantendo disciplina e autonomia para entregar resultados</p>
+                  <ul><li>Em equipe porque acredito que a troca de ideias e revisão de código elevam a qualidade do produto, mas também consigo atuar de forma independente quando necessário, mantendo disciplina e autonomia para entregar resultados</li></ul>
                   <li>Como você se organiza ao trabalhar em múltiplos projetos ou demandas simultâneas?</li>
-                  <p> Priorizo tarefas de maior impacto e prazo, uso ferramentas como Jira e Trello para acompanhar o progresso e mantenho comunicação constante com o time e gestores para ajustar prioridades quando necessário</p>
-                </ul>
+                  <ul><li>Priorizo tarefas de maior impacto e prazo, uso ferramentas como Jira e Trello para acompanhar o progresso e mantenho comunicação constante com o time e gestores para ajustar prioridades quando necessário</li></ul>
+                </ol>
               </div>
+
               <div className="tab-pane fade" id="Outras" role="tabpanel">
                 <h6>1. Perguntas sobre Fundamentos e Componentes</h6>
                 <ul >
@@ -318,14 +433,14 @@ export default function Sobre() {
                     <div className="card-header">Como Começaria um projeto</div>
                     <div className="card-body">
                       {/* <h4 className="card-title">Arquitetura bem pensada</h4> */}
-                      <p className="card-text">
+                      <div className="card-text">
                         <p>A Escolha Padrão para Iniciar: Componentes Funcionais e Hooks</p>
                         <p>Para a grande maioria das aplicações, de projetos pessoais a startups, o padrão mais moderno e recomendado para começar é a combinação de Componentes Funcionais com Hooks.</p>
                         <p>Este padrão se tornou o padrão ouro do ecossistema React por vários motivos:</p>
                         <p>Simplicidade e Clareza: Componentes funcionais são simplesmente funções JavaScript. Eles são mais fáceis de ler, escrever e testar do que os antigos componentes de classe.</p>
                         <p>Reutilização de Lógica: Hooks como useState e useEffect permitem que você adicione estado e efeitos colaterais aos seus componentes de forma limpa e modular. Além disso, você pode criar Hooks Customizados para reutilizar lógicas complexas em diferentes componentes, como a busca de dados de uma API.</p>
                         <p>Gerenciamento de Estado Simples: Para dados que só precisam ser acessados por um único componente, useState é perfeito. Para dados que precisam ser compartilhados entre vários componentes, você pode usar a Context API para evitar o famoso Prop Drilling sem a necessidade de uma biblioteca externa.</p>
-                      </p>
+                      </div>
                     </div>
                   </div>
 
@@ -333,26 +448,25 @@ export default function Sobre() {
                     <div className="card-header">Quando e Por que Escolher Outro Padrão?</div>
                     <div className="card-body">
                       {/* <h4 className="card-title">useEffect</h4> */}
-                      <p className="card-text">
+                      <div className="card-text">
                         <p>O padrão de Componentes Funcionais + Hooks + Context API é uma base sólida e escalável. Geralmente, você só deve considerar uma biblioteca de gerenciamento de estado mais robusta como Redux ou Zustand se:</p>
                         <p>Sua aplicação for muito grande e complexa, com um estado que precisa ser acessado por dezenas de componentes não relacionados.</p>
                         <p>Você precisar de ferramentas avançadas de depuração e middlewares para lidar com efeitos colaterais.</p>
                         <p>Minha recomendação: Comece com o padrão de Componentes Funcionais e Hooks. Use a Context API para gerenciar o estado global quando necessário. Se, e somente se, essa abordagem não for mais suficiente para manter o seu código organizado e fácil de gerenciar, aí sim você pode considerar a migração para algo como Redux ou Zustand.</p>
                         <p>Começar de forma simples permite que você construa a aplicação rapidamente e adicione complexidade apenas quando ela for realmente necessária.</p>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                
               </div>
+
               <div className="tab-pane fade" id="Hooks" role="tabpanel">
                 <div className="d-flex flex-row flex-wrap justify-content-evenly gap-1 ">
                   <div className="card border-primary mt-3" >
                     <div className="card-header">Hooks Essenciais do React</div>
                     <div className="card-body">
                       <h4 className="card-title">useState</h4>
-                      <p className="card-text">É o mais fundamental de todos. Ele permite que você adicione estado a um componente de função. O estado é basicamente uma variável que, quando alterada, faz com que o componente seja renderizado novamente.</p>
+                      <div className="card-text">É o mais fundamental de todos. Ele permite que você adicione estado a um componente de função. O estado é basicamente uma variável que, quando alterada, faz com que o componente seja renderizado novamente.</div>
                     </div>
                   </div>
 
@@ -360,7 +474,7 @@ export default function Sobre() {
                     <div className="card-header">Hooks Essenciais do React</div>
                     <div className="card-body">
                       <h4 className="card-title">useEffect</h4>
-                      <p className="card-text">Usado para lidar com efeitos colaterais em componentes, como buscar dados de uma API, manipular o DOM diretamente, ou configurar e limpar subscriptions. Ele executa a função que você passar, seja após a primeira renderização ou após cada atualização do componente, dependendo da sua configuração.</p>
+                      <div className="card-text">Usado para lidar com efeitos colaterais em componentes, como buscar dados de uma API, manipular o DOM diretamente, ou configurar e limpar subscriptions. Ele executa a função que você passar, seja após a primeira renderização ou após cada atualização do componente, dependendo da sua configuração.</div>
                     </div>
                   </div>
 
@@ -368,7 +482,7 @@ export default function Sobre() {
                     <div className="card-header">Hooks Essenciais do React</div>
                     <div className="card-body">
                       <h4 className="card-title">useRef</h4>
-                      <p className="card-text">Cria uma referência (um objeto mutável) que persiste entre as renderizações do componente. É útil para armazenar valores que não precisam causar uma nova renderização quando mudam, como um timer ID, ou para acessar um elemento do DOM diretamente.</p>
+                      <div className="card-text">Cria uma referência (um objeto mutável) que persiste entre as renderizações do componente. É útil para armazenar valores que não precisam causar uma nova renderização quando mudam, como um timer ID, ou para acessar um elemento do DOM diretamente.</div>
                     </div>
                   </div>
 
@@ -376,7 +490,7 @@ export default function Sobre() {
                     <div className="card-header">Hooks Essenciais do React</div>
                     <div className="card-body">
                       <h4 className="card-title">useContext</h4>
-                      <p className="card-text">Serve para acessar o contexto global de um componente, evitando a necessidade de passar props manualmente através de múltiplos níveis da árvore de componentes (o chamado prop drilling).</p>
+                      <div className="card-text">Serve para acessar o contexto global de um componente, evitando a necessidade de passar props manualmente através de múltiplos níveis da árvore de componentes (o chamado prop drilling).</div>
                     </div>
                   </div>
 
@@ -384,7 +498,7 @@ export default function Sobre() {
                     <div className="card-header">Hooks de Performance</div>
                     <div className="card-body">
                       <h4 className="card-title">useReducer</h4>
-                      <p className="card-text">Uma alternativa ao useState para gerenciar estados complexos ou que dependem de estados anteriores. Ele recebe um reducer (uma função que descreve como o estado muda) e um estado inicial, retornando o estado atual e uma função dispatch para disparar ações que o alteram.</p>
+                      <div className="card-text">Uma alternativa ao useState para gerenciar estados complexos ou que dependem de estados anteriores. Ele recebe um reducer (uma função que descreve como o estado muda) e um estado inicial, retornando o estado atual e uma função dispatch para disparar ações que o alteram.</div>
                     </div>
                   </div>
 
@@ -392,7 +506,7 @@ export default function Sobre() {
                     <div className="card-header">Hooks de Performance</div>
                     <div className="card-body">
                       <h4 className="card-title">useMemo</h4>
-                      <p className="card-text">Memoriza um valor computado. Use-o para evitar que cálculos caros sejam reexecutados a cada renderização, a menos que as dependências do cálculo tenham mudado.</p>
+                      <div className="card-text">Memoriza um valor computado. Use-o para evitar que cálculos caros sejam reexecutados a cada renderização, a menos que as dependências do cálculo tenham mudado.</div>
                     </div>
                   </div>
 
@@ -400,16 +514,62 @@ export default function Sobre() {
                     <div className="card-header">Hooks de Performance</div>
                     <div className="card-body">
                       <h4 className="card-title">useCallback</h4>
-                      <p className="card-text">Similar ao useMemo, mas memoriza uma função inteira. É útil para evitar que funções sejam recriadas a cada renderização, o que pode ser importante para otimizar componentes filhos que dependem de referências estáveis.</p>
+                      <div className="card-text">Similar ao useMemo, mas memoriza uma função inteira. É útil para evitar que funções sejam recriadas a cada renderização, o que pode ser importante para otimizar componentes filhos que dependem de referências estáveis.</div>
                     </div>
                   </div>
                   <div className="card border-primary mt-3">
                     <div className="card-header">Hooks de Performance</div>
                     <div className="card-body">
                       <h4 className="card-title">useLayoutEffect</h4>
-                      <p className="card-text">Quase idêntico ao useEffect, mas sua função é executada sincronamente após o DOM ser atualizado, antes que o navegador tenha tempo de pintá-lo na tela. É útil para medir dimensões de elementos do DOM, por exemplo, ou fazer alterações visuais que precisam acontecer antes da pintura. Ele pode bloquear a renderização, por isso, use-o com cautela.</p>
+                      <div className="card-text">Quase idêntico ao useEffect, mas sua função é executada sincronamente após o DOM ser atualizado, antes que o navegador tenha tempo de pintá-lo na tela. É útil para medir dimensões de elementos do DOM, por exemplo, ou fazer alterações visuais que precisam acontecer antes da pintura. Ele pode bloquear a renderização, por isso, use-o com cautela.</div>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div className="tab-pane fade" id="Padroes" role="tabpanel">
+                <div className="d-flex flex-row flex-wrap justify-content-evenly gap-1 ">
+
+                  <div className="card border-primary mt-3" >
+                    <div className="card-header">Atomic Design</div>
+                    <div className="card-body">
+                      <h4 className="card-title">Atomic Design</h4>
+                      <div className="card-text">
+                        Pense nisso como a organização de um quebra-cabeça. Você começa com os pedaços menores e mais básicos (Átomos - botões, inputs), constrói componentes um pouco maiores com eles (Moléculas - um formulário de busca), agrupa as moléculas para formar seções maiores (Organismos - o cabeçalho completo da página), e finalmente monta tudo para criar as páginas finais.
+                      </div><br/>
+                      <div>
+                        Quando usar? Ideal para grandes projetos com muitos componentes reutilizáveis, pois ajuda a manter a consistência e a organização.
+                        </div>
+                    </div>
+                  </div>
+
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">Clean Code</div>
+                    <div className="card-body">
+                      <h4 className="card-title">Clean Code</h4>
+                      <div className="card-text">É uma filosofia de escrever código de forma clara, simples e fácil de entender. Significa usar nomes descritivos para variáveis e funções, escrever funções pequenas que fazem apenas uma coisa e remover código duplicado.</div><br/>
+                      <div>Quando usar? Sempre! É uma boa prática fundamental em qualquer projeto de software, não apenas no React.</div>
+                    </div>
+                  </div>
+
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">SOLID</div>
+                    <div className="card-body">
+                      <h4 className="card-title">SOLID</h4>
+                      <div className="card-text">São cinco princípios para escrever código robusto e de fácil manutenção. O mais aplicável no React é o S de Single Responsibility Principle (Princípio da Responsabilidade Única), que sugere que um componente (ou função) deve ter apenas uma razão para mudar.</div><br/>
+                      <div>Quando usar? Use para guiar o design dos seus componentes. Por exemplo, um componente que exibe uma lista de produtos não deve ser responsável por buscar esses produtos da API.</div>
+                    </div>
+                  </div>
+
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">Componentização</div>
+                    <div className="card-body">
+                      <h4 className="card-title">Componentização</h4>
+                      <div className="card-text">Este é o padrão mais fundamental do React. A ideia é dividir a UI em pedaços pequenos e reutilizáveis. Em vez de ter uma única página gigante, você a divide em componentes menores, como Header, Button, Card, etc.</div><br/>
+                      <div>Quando usar? Sempre! É o coração do React e a base de como você constrói aplicações com ele.</div>
+                    </div>
+                  </div>
+
+                  
                 </div>
               </div>
 
