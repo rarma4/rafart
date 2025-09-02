@@ -26,6 +26,9 @@ export default function Sobre() {
               <li className="nav-item" role="presentation">
                 <a className="nav-link" data-bs-toggle="tab" href="#Inicio" aria-selected="false" role="tab">Inicio</a>
               </li>
+              <li className="nav-item" role="presentation">
+                <a className="nav-link" data-bs-toggle="tab" href="#Hooks" aria-selected="false" role="tab">Hooks</a>
+              </li>
 
             </ul>
             <div id="myTabContent" className="tab-content">
@@ -127,86 +130,68 @@ export default function Sobre() {
 
                   </li>
                 </ul>
-                <hr />
-                <div>
-                  Checklist
-                </div>
-                <ul>
-                  <li>
-                    <li>Prioridade Alta (Impacto Imediato)</li>
-                    <ul>
-                      <li>Build em produção (NODE_ENV=production no build final)</li>
-                      <li>Ativar minificação e compressão (Gzip/Brotli) no servidor</li>
-                      <li>Usar React.memo, useMemo e useCallback para evitar re-renderizações</li>
-                      <li>Quebrar componentes grandes em menores para isolar renderizações</li>
-                      <li>Lazy loading de rotas/páginas e componentes não essenciais</li>
-                      <li>Imagens no formato WebP/AVIF e tamanho ajustado</li>
-                      <li>Imagens fora da tela com loading=lazy</li>
-                      <li>Listas grandes com virtualização (react-window ou react-virtualized)</li>
-                    </ul>
-                  </li>
-                  <li>
-                    Prioridade Média (Aprimoramento Contínuo)
-                    <ul>
-                      Cache de dados com React Query ou SWR
-                      <li>Pré-carregamento de recursos importantes ( rel=preload)</li>
-                      <li>Prefetch de rotas internas</li>
-                      <li>CSS Modules ou Tailwind para reduzir CSS global</li>
-                      <li>Remover CSS não utilizado com PurgeCSS</li>
-                      <li>Separar bibliotecas pesadas em chunks usando code splitting (import() dinâmico)</li>
-                    </ul>
-                  </li>
-                  <li>
-                    Prioridade Avançada (Para Projetos Maiores)
-                    <ul>
-                      <li>Migrar para Server Components (se usando Next.js 13+)</li>
-                      <li>Hydration parcial para páginas com muito conteúdo estático</li>
-                      <li>Suspense + streaming para renderização gradual do conteúdo</li>
-                      <li>Reduzir JavaScript enviado ao cliente (tree-shaking + análise de bundle)</li>
-                      <li>Usar CDN para servir imagens e arquivos estáticos</li>
-                    </ul>
-                  </li>
-                  <li>
-                    Monitoramento
-                    <ul>
-                      <li>Rodar Lighthouse regularmente para medir performance</li>
-                      <li>Usar React Profiler para encontrar gargalos de renderização</li>
-                      <li>Monitorar métricas de Core Web Vitals (CLS, LCP, FID) no Google Search Console</li>
-                    </ul>
-                  </li>
-                </ul>
+                
               </div>
-              <div className="tab-pane fade" id="TecnicasProjetos" role="tabpanel">
+              <div className="tab-pane fade mt-3" id="TecnicasProjetos" role="tabpanel">
                 <p>Se fosse para resumir as técnicas que mais diferenciam um frontend React de alta qualidade, eu dividiria em 4 pilares — arquitetura, performance, UX e manutenibilidade.</p>
-                <ul>
-                  <li> Arquitetura bem pensada
-                    <p>Organização por feature (feature-based structure)<br />Evitar um “pasta components” gigante e genérica.</p>
 
-                    <p>Componentização inteligente<br />Reaproveitar o máximo sem exagerar em fragmentar.</p>
+                <div className="d-flex flex-row flex-wrap justify-content-evenly gap-1 ">
+                  <div className="card border-primary mt-3" >
+                    <div className="card-header">Arquitetura bem pensada</div>
+                    <div className="card-body">
+                      {/* <h4 className="card-title">Arquitetura bem pensada</h4> */}
+                      <p className="card-text">
+                        <p>Organização por feature (feature-based structure)<br />Evitar um “pasta components” gigante e genérica.</p>
+                        <p>Componentização inteligente<br />Reaproveitar o máximo sem exagerar em fragmentar.</p>
+                        <p>Hooks personalizados<br />Para encapsular lógica de negócio/reutilizável (useAuth, useFetch, etc.).</p>
+                        <p>State management bem escolhido<br />Usar useState/useReducer para coisas simples, mas Redux/Zustand/Recoil para estados complexos.</p>
+                      </p>
+                    </div>
+                  </div>
 
-                    <p>Hooks personalizados<br />Para encapsular lógica de negócio/reutilizável (useAuth, useFetch, etc.).</p>
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">Performance</div>
+                    <div className="card-body">
+                      {/* <h4 className="card-title">useEffect</h4> */}
+                      <p className="card-text">
+                        <p>React.memo, useMemo, useCallback para evitar renders desnecessários.</p>
+                        <p>Code splitting + lazy loading para reduzir bundle inicial.</p>
+                        <p>Virtualização de listas grandes (react-window).</p>
+                        <p>Pré-renderização (SSR/SSG com Next.js) para entregar conteúdo rápido.</p>
+                        <p>Uso de formatos leves (imagens WebP/AVIF, SVG para ícones).</p>
+                      </p>
+                    </div>
+                  </div>
 
-                    <p>State management bem escolhido<br />Usar useState/useReducer para coisas simples, mas Redux/Zustand/Recoil para estados complexos.</p>
-                  </li>
-                  <li> Performance</li>
-                  <p>React.memo, useMemo, useCallback para evitar renders desnecessários.</p>
-                  <p>Code splitting + lazy loading para reduzir bundle inicial.</p>
-                  <p>Virtualização de listas grandes (react-window).</p>
-                  <p>Pré-renderização (SSR/SSG com Next.js) para entregar conteúdo rápido.</p>
-                  <p>Uso de formatos leves (imagens WebP/AVIF, SVG para ícones).</p>
-                  <li>  UX (Experiência do Usuário)</li>
-                  <p>Feedback rápido: loaders, skeletons e transições suaves.</p>
-                  <p>Design responsivo e adaptado para mobile-first.</p>
-                  <p>Acessibilidade (a11y): labels, aria-attributes, contraste de cores.</p>
-                  <p>Interações fluidas usando animações leves (Framer Motion, CSS transitions).</p>
-                  <p>Formulários amigáveis: validação instantânea e mensagens claras.</p>
-                  <li> Manutenibilidade e Qualidade</li>
-                  <p>Tipagem forte (TypeScript) para evitar bugs em tempo de desenvolvimento.</p>
-                  <p>Testes unitários (Jest, React Testing Library) e testes E2E (Cypress/Playwright).</p>
-                  <p>Padronização de código com ESLint + Prettier.</p>
-                  <p>Documentação clara (README, Storybook para UI).</p>
-                  <p>Commits semânticos (Conventional Commits).</p>
-                </ul>
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">UX (Experiência do Usuário)</div>
+                    <div className="card-body">
+                      {/* <h4 className="card-title">useRef</h4> */}
+                      <p className="card-text">
+                        <p>Feedback rápido: loaders, skeletons e transições suaves.</p>
+                        <p>Design responsivo e adaptado para mobile-first.</p>
+                        <p>Acessibilidade (a11y): labels, aria-attributes, contraste de cores.</p>
+                        <p>Interações fluidas usando animações leves (Framer Motion, CSS transitions).</p>
+                        <p>Formulários amigáveis: validação instantânea e mensagens claras.</p>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="card border-primary mt-3">
+                    <div className="card-header"> Manutenibilidade e Qualidade</div>
+                    <div className="card-body">
+                      {/* <h4 className="card-title">useContext</h4> */}
+                      <p className="card-text">
+                        <p>Tipagem forte (TypeScript) para evitar bugs em tempo de desenvolvimento.</p>
+                        <p>Testes unitários (Jest, React Testing Library) e testes E2E (Cypress/Playwright).</p>
+                        <p>Padronização de código com ESLint + Prettier.</p>
+                        <p>Documentação clara (README, Storybook para UI).</p>
+                        <p>Commits semânticos (Conventional Commits).</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
               <div className="tab-pane fade" id="Questoes" role="tabpanel">
                 <p>questoes</p>
@@ -327,33 +312,107 @@ export default function Sobre() {
 
               </div>
               <div className="tab-pane fade" id="Inicio" role="tabpanel">
-                <h6>Como Começaria um projeto</h6>
-                <p>A Escolha Padrão para Iniciar: Componentes Funcionais e Hooks</p>
-                <p>Para a grande maioria das aplicações, de projetos pessoais a startups, o padrão mais moderno e recomendado para começar é a combinação de Componentes Funcionais com Hooks.</p>
 
-                <p>Este padrão se tornou o padrão ouro do ecossistema React por vários motivos:</p>
+                <div className="d-flex flex-row flex-wrap justify-content-evenly gap-1 ">
+                  <div className="card border-primary mt-3" >
+                    <div className="card-header">Como Começaria um projeto</div>
+                    <div className="card-body">
+                      {/* <h4 className="card-title">Arquitetura bem pensada</h4> */}
+                      <p className="card-text">
+                        <p>A Escolha Padrão para Iniciar: Componentes Funcionais e Hooks</p>
+                        <p>Para a grande maioria das aplicações, de projetos pessoais a startups, o padrão mais moderno e recomendado para começar é a combinação de Componentes Funcionais com Hooks.</p>
+                        <p>Este padrão se tornou o padrão ouro do ecossistema React por vários motivos:</p>
+                        <p>Simplicidade e Clareza: Componentes funcionais são simplesmente funções JavaScript. Eles são mais fáceis de ler, escrever e testar do que os antigos componentes de classe.</p>
+                        <p>Reutilização de Lógica: Hooks como useState e useEffect permitem que você adicione estado e efeitos colaterais aos seus componentes de forma limpa e modular. Além disso, você pode criar Hooks Customizados para reutilizar lógicas complexas em diferentes componentes, como a busca de dados de uma API.</p>
+                        <p>Gerenciamento de Estado Simples: Para dados que só precisam ser acessados por um único componente, useState é perfeito. Para dados que precisam ser compartilhados entre vários componentes, você pode usar a Context API para evitar o famoso Prop Drilling sem a necessidade de uma biblioteca externa.</p>
+                      </p>
+                    </div>
+                  </div>
 
-                <p>Simplicidade e Clareza: Componentes funcionais são simplesmente funções JavaScript. Eles são mais fáceis de ler, escrever e testar do que os antigos componentes de classe.</p>
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">Quando e Por que Escolher Outro Padrão?</div>
+                    <div className="card-body">
+                      {/* <h4 className="card-title">useEffect</h4> */}
+                      <p className="card-text">
+                        <p>O padrão de Componentes Funcionais + Hooks + Context API é uma base sólida e escalável. Geralmente, você só deve considerar uma biblioteca de gerenciamento de estado mais robusta como Redux ou Zustand se:</p>
+                        <p>Sua aplicação for muito grande e complexa, com um estado que precisa ser acessado por dezenas de componentes não relacionados.</p>
+                        <p>Você precisar de ferramentas avançadas de depuração e middlewares para lidar com efeitos colaterais.</p>
+                        <p>Minha recomendação: Comece com o padrão de Componentes Funcionais e Hooks. Use a Context API para gerenciar o estado global quando necessário. Se, e somente se, essa abordagem não for mais suficiente para manter o seu código organizado e fácil de gerenciar, aí sim você pode considerar a migração para algo como Redux ou Zustand.</p>
+                        <p>Começar de forma simples permite que você construa a aplicação rapidamente e adicione complexidade apenas quando ela for realmente necessária.</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-                <p>Reutilização de Lógica: Hooks como useState e useEffect permitem que você adicione estado e efeitos colaterais aos seus componentes de forma limpa e modular. Além disso, você pode criar Hooks Customizados para reutilizar lógicas complexas em diferentes componentes, como a busca de dados de uma API.</p>
-
-                <p>Gerenciamento de Estado Simples: Para dados que só precisam ser acessados por um único componente, useState é perfeito. Para dados que precisam ser compartilhados entre vários componentes, você pode usar a Context API para evitar o famoso Prop Drilling sem a necessidade de uma biblioteca externa.</p>
-
-                <p>Quando e Por que Escolher Outro Padrão?</p>
-                <p>O padrão de Componentes Funcionais + Hooks + Context API é uma base sólida e escalável. Geralmente, você só deve considerar uma biblioteca de gerenciamento de estado mais robusta como Redux ou Zustand se:</p>
-
-                <p>Sua aplicação for muito grande e complexa, com um estado que precisa ser acessado por dezenas de componentes não relacionados.</p>
-
-                <p>Você precisar de ferramentas avançadas de depuração e middlewares para lidar com efeitos colaterais.</p>
-
-                <p>Minha recomendação: Comece com o padrão de Componentes Funcionais e Hooks. Use a Context API para gerenciar o estado global quando necessário. Se, e somente se, essa abordagem não for mais suficiente para manter o seu código organizado e fácil de gerenciar, aí sim você pode considerar a migração para algo como Redux ou Zustand.</p>
-
-                <p>Começar de forma simples permite que você construa a aplicação rapidamente e adicione complexidade apenas quando ela for realmente necessária.</p>
-
-
-
-
+                
               </div>
+              <div className="tab-pane fade" id="Hooks" role="tabpanel">
+                <div className="d-flex flex-row flex-wrap justify-content-evenly gap-1 ">
+                  <div className="card border-primary mt-3" >
+                    <div className="card-header">Hooks Essenciais do React</div>
+                    <div className="card-body">
+                      <h4 className="card-title">useState</h4>
+                      <p className="card-text">É o mais fundamental de todos. Ele permite que você adicione estado a um componente de função. O estado é basicamente uma variável que, quando alterada, faz com que o componente seja renderizado novamente.</p>
+                    </div>
+                  </div>
+
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">Hooks Essenciais do React</div>
+                    <div className="card-body">
+                      <h4 className="card-title">useEffect</h4>
+                      <p className="card-text">Usado para lidar com efeitos colaterais em componentes, como buscar dados de uma API, manipular o DOM diretamente, ou configurar e limpar subscriptions. Ele executa a função que você passar, seja após a primeira renderização ou após cada atualização do componente, dependendo da sua configuração.</p>
+                    </div>
+                  </div>
+
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">Hooks Essenciais do React</div>
+                    <div className="card-body">
+                      <h4 className="card-title">useRef</h4>
+                      <p className="card-text">Cria uma referência (um objeto mutável) que persiste entre as renderizações do componente. É útil para armazenar valores que não precisam causar uma nova renderização quando mudam, como um timer ID, ou para acessar um elemento do DOM diretamente.</p>
+                    </div>
+                  </div>
+
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">Hooks Essenciais do React</div>
+                    <div className="card-body">
+                      <h4 className="card-title">useContext</h4>
+                      <p className="card-text">Serve para acessar o contexto global de um componente, evitando a necessidade de passar props manualmente através de múltiplos níveis da árvore de componentes (o chamado prop drilling).</p>
+                    </div>
+                  </div>
+
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">Hooks de Performance</div>
+                    <div className="card-body">
+                      <h4 className="card-title">useReducer</h4>
+                      <p className="card-text">Uma alternativa ao useState para gerenciar estados complexos ou que dependem de estados anteriores. Ele recebe um reducer (uma função que descreve como o estado muda) e um estado inicial, retornando o estado atual e uma função dispatch para disparar ações que o alteram.</p>
+                    </div>
+                  </div>
+
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">Hooks de Performance</div>
+                    <div className="card-body">
+                      <h4 className="card-title">useMemo</h4>
+                      <p className="card-text">Memoriza um valor computado. Use-o para evitar que cálculos caros sejam reexecutados a cada renderização, a menos que as dependências do cálculo tenham mudado.</p>
+                    </div>
+                  </div>
+
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">Hooks de Performance</div>
+                    <div className="card-body">
+                      <h4 className="card-title">useCallback</h4>
+                      <p className="card-text">Similar ao useMemo, mas memoriza uma função inteira. É útil para evitar que funções sejam recriadas a cada renderização, o que pode ser importante para otimizar componentes filhos que dependem de referências estáveis.</p>
+                    </div>
+                  </div>
+                  <div className="card border-primary mt-3">
+                    <div className="card-header">Hooks de Performance</div>
+                    <div className="card-body">
+                      <h4 className="card-title">useLayoutEffect</h4>
+                      <p className="card-text">Quase idêntico ao useEffect, mas sua função é executada sincronamente após o DOM ser atualizado, antes que o navegador tenha tempo de pintá-lo na tela. É útil para medir dimensões de elementos do DOM, por exemplo, ou fazer alterações visuais que precisam acontecer antes da pintura. Ele pode bloquear a renderização, por isso, use-o com cautela.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
