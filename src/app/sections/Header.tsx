@@ -1,12 +1,23 @@
+"use client"
+
 import '../styles/sections/header.scss'
 import Link from 'next/link'
+import { motion } from "framer-motion";
 
 export default function Header() {
   return (
     <>
-      <div className="container-fluid bg-primary text-white d-flex justify-content-evenly flex-column header">
-        <header className="container">
+      <motion.div
+        className="container-fluid bg-primary text-white d-flex justify-content-evenly flex-column header"
+      >
+        <motion.header
+          className="container"
+          initial={{ scale: 0.5 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <div className="row p-3 text-center ">
+
             <div className="col-md-2 col-sm-1"></div>
             <div className="col-md-8 col-sm-10 ">
               <h1 className="home-title pb-3"><strong>Rafael Marinho</strong></h1>
@@ -23,8 +34,8 @@ export default function Header() {
               
             </div> */}
           </div>
-        </header>
-      </div>
+        </motion.header>
+      </motion.div>
     </>
   )
 }

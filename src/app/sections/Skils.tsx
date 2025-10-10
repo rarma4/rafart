@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image'
 import { skils } from '../utils/Utils'
+import { motion } from "framer-motion";
 
 export default function Skils() {
   // var settings = {
@@ -78,22 +79,30 @@ export default function Skils() {
     <div className="container-fluid text-white bg-primary d-flex justify-content-evenly" id="servicos">
       <div className="container">
         <div className="row mt-4 mb-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            whileHover={{ y: -5, scale: 1.02 }}
+          >
 
-          <Slider  {...settings}>
 
-            {skils.map((item, index) => (
-              <div className=" w-100 d-flex justify-content-center"  key={index}>
-                <Image
-                  src={item.src}
-                  alt={item.titulo}
-                  width={item.altura}
-                  height={item.largura}
-                />
-              </div>
-            ))}
+            <Slider  {...settings}>
 
-          </Slider>
+              {skils.map((item, index) => (
+                <div className=" w-100 d-flex justify-content-center" key={index}>
+                  <Image
+                    src={item.src}
+                    alt={item.titulo}
+                    width={item.altura}
+                    height={item.largura}
+                  />
+                </div>
+              ))}
 
+            </Slider>
+          </motion.div>
         </div>
       </div>
     </div>
