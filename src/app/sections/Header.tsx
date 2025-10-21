@@ -21,7 +21,7 @@ export default function Header() {
             <div className="col-md-2 col-sm-1"></div>
             <div className="col-md-8 col-sm-10 ">
               <h1 className="home-title pb-3"><strong>Rafael Marinho</strong></h1>
-              <h2 className="home-subtitle pb-3 text-warning">Desenvolvedor Pleno | Senior Frontend </h2>
+              <h2 className="home-subtitle pb-3 text-warning">Desenvolvedor Senior Frontend </h2>
               {/* <p className="pb-3">Profissional em <strong>UX Designer</strong> e <strong> desenvolvimento Front-End</strong> criando designs modernos e responsivos para <strong>Web</strong> e <strong>dispositivos Mobile</strong>. Vamos trabalhar juntos. Obrigado.
               </p> */}
               <p className="pb-3">Estou sempre em busca de novos desafios e acredito que minha experiência pode contribuir diretamente para os objetivos da empresa, unindo tecnologia, criatividade e foco em resultados.. Vamos trabalhar juntos. Obrigado.

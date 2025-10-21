@@ -14,7 +14,7 @@ export const ExperienciaProfissional = [
     "retorno": "one",
     "nome": "Tenda Negócios Imobiliários",
     "data": "10/2021 – 07/2025",
-    "descricao": "Desenvolvedor Pleno/Senior Frontend",
+    "descricao": "Desenvolvedor Senior Frontend",
     "detalhes": [
       "React/NextJs/NodeJs - Implementação e testes A/B ,aplicações, desenvolvimento e manutenção de ferramentas, Comunicação AWS S3, Implementações de Designer  sistems;",
       "PHP Wordpress - Implementação e testes A/B, Criação de plugin para salvar Lead, criação de tema personalizado, Aplicação SEO para melhor desempenho Pagespeed, aplicações, desenvolvimento e manutenção de ferramentas;",

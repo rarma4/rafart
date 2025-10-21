@@ -252,7 +252,7 @@ Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) par
 
 ## 📞 Contato
 
-**Rafael Marinho** - Desenvolvedor Frontend Pleno
+**Rafael Marinho** - Desenvolvedor Frontend Senior
 
 - **Website**: [https://www.rafart.com.br](https://www.rafart.com.br)
 - **Email**: [contato@rafart.com.br](mailto:contato@rafart.com.br)
