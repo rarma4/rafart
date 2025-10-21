@@ -14,7 +14,7 @@ export const ExperienciaProfissional = [
     "retorno": "one",
     "nome": "Tenda Negócios Imobiliários",
     "data": "10/2021 – 07/2025",
-    "descricao": "Desenvolvedor Senior Frontend",
+    "descricao": "Desenvolvedor Web front-end Senior",
     "detalhes": [
       "React/NextJs/NodeJs - Implementação e testes A/B ,aplicações, desenvolvimento e manutenção de ferramentas, Comunicação AWS S3, Implementações de Designer  sistems;",
       "PHP Wordpress - Implementação e testes A/B, Criação de plugin para salvar Lead, criação de tema personalizado, Aplicação SEO para melhor desempenho Pagespeed, aplicações, desenvolvimento e manutenção de ferramentas;",
@@ -27,7 +27,7 @@ export const ExperienciaProfissional = [
     "retorno": "two",
     "nome": "Spread Teleinformática",
     "data": "09/2020 – 09/2021",
-    "descricao": "Programador Frontend junior",
+    "descricao": "Desenvolvedor Web front-end",
     "detalhes": [
       "Prestação de serviços para as empresas Novartis Pharma (09/2020 - 02/2021) e Qualicorp (03/2021 – 08/2021)",
       "Implementação e testes de novas ferramentas para software WordPress (PHP, CSS, Html, Hubspot, Bootstrap, API, temas e Plugins)",
