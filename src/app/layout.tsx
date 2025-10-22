@@ -24,8 +24,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
-  robots: 'index, follow'
+  robots: 'index, follow',
+  manifest: '/manifest.json'
 }
+
 export default function RootLayout({
   children,
 }: {
