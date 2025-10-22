@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   robots: 'index, follow',
+  manifest: '/manifest.json'
 }
 
 export default function RootLayout({
