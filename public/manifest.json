@@ -1,7 +1,7 @@
 {
-  "name": "Todo List App",
-  "short_name": "Todo App",
-  "description": "A simple and effective todo list application",
+  "name": "Raf'Art App",
+  "short_name": "Raf'Art App",
+  "description": "Site portfolio de Raf'Art",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#272b30",
