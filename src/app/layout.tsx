@@ -35,13 +35,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <meta name="google-site-verification" content="uHCJDTlAdm6OiLkh1bvN1RR5kmiyNzUK9vfOpAyH9CA" />  
+      <head>
+        <meta name="google-site-verification" content="uHCJDTlAdm6OiLkh1bvN1RR5kmiyNzUK9vfOpAyH9CA" />
+      </head>
       <body className={comfortaa.className}>
       {/* <body className="d-flex flex-column min-nh-100"> */}
         <Navigation />
         {children}
         <Footer />
-        <script src="../../assets/js/bootstrap.bundle.min.js" async></script>
+        <script src="/assets/js/bootstrap.bundle.min.js" async></script>
       </body>
     </html>
   )

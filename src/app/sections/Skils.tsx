@@ -95,8 +95,8 @@ export default function Skils() {
                   <Image
                     src={item.src}
                     alt={item.titulo}
-                    width={item.altura}
-                    height={item.largura}
+                    width={item.largura}
+                    height={item.altura}
                   />
                 </div>
               ))}
