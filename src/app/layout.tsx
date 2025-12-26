@@ -25,7 +25,19 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   robots: 'index, follow',
-  manifest: '/manifest.json'
+  manifest: '/manifest.json',
+  keywords: ['Rafael Marinho', 'Rafart', 'Desenvolvedor Web', 'Frontend', 'Web Design', 'Programador', 'Portfolio', 'Desenvolvimento de Sites', 'React', 'Next.js', 'JavaScript', 'CSS', 'HTML', 'Desenvolvedor Senior'],
+  openGraph: {
+    title: `Raf'Art – Developer and WebDesign`,
+    description: 'Pagina de Rafael Marinho desenvolvedor senior frontend',
+    url: 'https://www.rafart.com.br/',
+    siteName: `Raf'Art`,
+  },
+  twitter: {
+    title: `Raf'Art – Developer and WebDesign`,
+    description: 'Pagina de Rafael Marinho desenvolvedor senior frontend',
+    card: 'summary_large_image',
+  },  
 }
 
 export default function RootLayout({
