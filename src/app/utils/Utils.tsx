@@ -12,6 +12,36 @@ export const ExperienciaProfissional = [
     "id": 1,
     "chave": "#one",
     "retorno": "one",
+    "nome": "FourSys Tech",
+    "data": "10/2021 – 07/2025",
+    "descricao": "Desenvolvedor Web front-end Senior SEO",
+    "detalhes": [
+      "Prestação de serviços para as empresas Youse Seguro Auto (10/2025 - 12/2025)",
+      "React/Gatsby - Aplicação SEO para melhor desempenho Pagespeed, aplicações, desenvolvimento e manutenção de ferramentas;",
+      "",
+      "1. Processamento e Execução (Thread Principal): Otimização de scripts pesados, refatoração de funções complexas e remoção de lógicas obsoletas.",
+      "Resultado: O 'cérebro' do navegador ficou livre mais rápido, reduzindo o esforço da thread principal em 52% (de 7,5s para 3,6s) e o tempo de execução de JavaScript em 58%.",
+      "",
+      "2. Carregamento Visual e LCP (Experiência do Usuário: Implementação de Preload (pré-carregamento) na imagem principal e remoção de bloqueios de renderização (CSS/JS que travavam a tela).",
+      "Resultado: O maior elemento da página (LCP) passou a aparecer quase instantaneamente, caindo de drásticos 13,2 segundos para apenas 200ms. A página agora parece 'carregada' de imediato.",
+      "",
+      "3. Limpeza de Código e Recursos Inúteis: Técnicas de Tree Shaking e Minificação para remover CSS e JavaScript que não eram usados na página, além da eliminação do document.write().",
+      "Resultado: Redução de peso significativa (mais de 480 KiB de JS economizados). O status passou para PASS, indicando que o código enviado é estritamente o necessário.",
+      "",
+      "4. Estrutura de Dados e DOM: Simplificação do HTML, removendo excesso de 'divs' desnecessárias e elementos aninhados.",
+      "Resultado: O navegador agora processa a estrutura da página (DOM) de forma muito mais leve, saindo de 1.520 elementos para um nível considerado ideal (PASS).",
+      "",
+      "5. Integração com Terceiros e Navegadores Modernos: Adiamento (defer/async) de scripts externos (anúncios, chats, analytics) e substituição de código legado por sintaxe moderna.",
+      "Resultado: Scripts de terceiros pararam de travar o site (0ms de bloqueio) e o suporte a navegadores modernos ficou mais eficiente.",
+      "",
+      "6. Entrega e Cache (Infraestrutura): Ativação de compressão de texto (Gzip/Brotli), configuração de cabeçalhos de cache para arquivos estáticos e aplicação de Lazy Load (carregamento tardio) em imagens fora da visão do usuário.",
+      "Resultado: Menos consumo de dados e carregamento instantâneo para usuários que retornam ao site, economizando largura de banda e tempo de servidor."
+    ]
+  },
+  {
+    "id": 2,
+    "chave": "#two",
+    "retorno": "two",
     "nome": "Tenda Negócios Imobiliários",
     "data": "10/2021 – 07/2025",
     "descricao": "Desenvolvedor Web front-end Senior",
@@ -22,9 +52,9 @@ export const ExperienciaProfissional = [
     ]
   },
   {
-    "id": 2,
-    "chave": "#two",
-    "retorno": "two",
+    "id": 3,
+    "chave": "#three",
+    "retorno": "three",
     "nome": "Spread Teleinformática",
     "data": "09/2020 – 09/2021",
     "descricao": "Desenvolvedor Web front-end",
@@ -35,9 +65,9 @@ export const ExperienciaProfissional = [
     ]
   },
   {
-    "id": 3,
-    "chave": "#three",
-    "retorno": "three",
+    "id": 4,
+    "chave": "#four",
+    "retorno": "four",
     "nome": "Adin Com. e Serv. de Marketing",
     "data": "09/2019 – 04/2020",
     "descricao": "Programador PHP junior",
@@ -47,9 +77,9 @@ export const ExperienciaProfissional = [
     ]
   },
   {
-    "id": 4,
-    "chave": "#four",
-    "retorno": "four",
+    "id": 5,
+    "chave": "#five",
+    "retorno": "five",
     "nome": "Dimensions Software Ltda",
     "data": "04/2019 – 08/2019",
     "descricao": "Assistente de desenvolvimento de Software",
@@ -68,7 +98,7 @@ export const ServicoS = [
     "src": "../../assets/img/design.svg",
     "titulo": "Design",
     "subtitulo": "",
-    "texto": "Criação e desenvolvimento de identidade visual e logomarca.",
+    "texto": "Criação e desenvolvimento de identidade visual e logomarca e designer gráfico.",
   },
   {
     "id": 2,
@@ -93,7 +123,7 @@ export const ServicoS = [
 export const habilidadeS = [
   {
     "id": 0,
-    "titulo": "React - NextJS ",
+    "titulo": "React - NextJS / Gatsby",
     "nivel": "80%",
   },
   {
@@ -114,7 +144,7 @@ export const habilidadeS = [
   {
     "id": 2,
     "titulo": "HTML",
-    "nivel": "100%",
+    "nivel": "99%",
   },
   {
     "id": 3,
@@ -126,10 +156,35 @@ export const habilidadeS = [
     "titulo": "PHP",
     "nivel": "90%",
   },
-    {
+  {
     "id": 7,
     "titulo": "WordPress",
     "nivel": "95%",
+  },
+  {
+    "id": 8,
+    "titulo": "CI/CD",
+    "nivel": "75%",
+  },
+  {
+    "id": 9,
+    "titulo": "Git / GitHub / GitLab",
+    "nivel": "85%",
+  },
+  {
+    "id": 10,
+    "titulo": "MysQL / PostgreSQL",
+    "nivel": "75%",
+  },
+  {
+    "id": 11,
+    "titulo": "Kamban / Gira / Trello",
+    "nivel": "75%",
+  },
+  {
+    "id": 12,
+    "titulo": "SEO / Performance",
+    "nivel": "90%",
   },
 
 
