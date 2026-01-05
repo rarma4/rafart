@@ -13,8 +13,8 @@ export const ExperienciaProfissional = [
     "chave": "#one",
     "retorno": "one",
     "nome": "FourSys Tech",
-    "data": "10/2021 – 07/2025",
-    "descricao": "Desenvolvedor Web front-end Senior SEO",
+    "data": "10/2025 – até presente data",
+    "descricao": "Desenvolvedor Web front-end Senior & SEO",
     "detalhes": [
       "Prestação de serviços para as empresas Youse Seguro Auto (10/2025 - 12/2025)",
       "React/Gatsby - Aplicação SEO para melhor desempenho Pagespeed, aplicações, desenvolvimento e manutenção de ferramentas;",
