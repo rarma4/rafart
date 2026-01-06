@@ -17,25 +17,12 @@ export const ExperienciaProfissional = [
     "descricao": "Desenvolvedor Web front-end Senior & SEO",
     "detalhes": [
       "Prestação de serviços para as empresas Youse Seguro Auto (10/2025 - 12/2025)",
-      "React/Gatsby - Aplicação SEO para melhor desempenho Pagespeed, aplicações, desenvolvimento e manutenção de ferramentas;",
-      "",
-      "1. Processamento e Execução (Thread Principal): Otimização de scripts pesados, refatoração de funções complexas e remoção de lógicas obsoletas.",
-      "Resultado: O 'cérebro' do navegador ficou livre mais rápido, reduzindo o esforço da thread principal em 52% (de 7,5s para 3,6s) e o tempo de execução de JavaScript em 58%.",
-      "",
-      "2. Carregamento Visual e LCP (Experiência do Usuário: Implementação de Preload (pré-carregamento) na imagem principal e remoção de bloqueios de renderização (CSS/JS que travavam a tela).",
-      "Resultado: O maior elemento da página (LCP) passou a aparecer quase instantaneamente, caindo de drásticos 13,2 segundos para apenas 200ms. A página agora parece 'carregada' de imediato.",
-      "",
-      "3. Limpeza de Código e Recursos Inúteis: Técnicas de Tree Shaking e Minificação para remover CSS e JavaScript que não eram usados na página, além da eliminação do document.write().",
-      "Resultado: Redução de peso significativa (mais de 480 KiB de JS economizados). O status passou para PASS, indicando que o código enviado é estritamente o necessário.",
-      "",
-      "4. Estrutura de Dados e DOM: Simplificação do HTML, removendo excesso de 'divs' desnecessárias e elementos aninhados.",
-      "Resultado: O navegador agora processa a estrutura da página (DOM) de forma muito mais leve, saindo de 1.520 elementos para um nível considerado ideal (PASS).",
-      "",
-      "5. Integração com Terceiros e Navegadores Modernos: Adiamento (defer/async) de scripts externos (anúncios, chats, analytics) e substituição de código legado por sintaxe moderna.",
-      "Resultado: Scripts de terceiros pararam de travar o site (0ms de bloqueio) e o suporte a navegadores modernos ficou mais eficiente.",
-      "",
-      "6. Entrega e Cache (Infraestrutura): Ativação de compressão de texto (Gzip/Brotli), configuração de cabeçalhos de cache para arquivos estáticos e aplicação de Lazy Load (carregamento tardio) em imagens fora da visão do usuário.",
-      "Resultado: Menos consumo de dados e carregamento instantâneo para usuários que retornam ao site, economizando largura de banda e tempo de servidor."
+      "Desenvolvimento e otimização de SEO e performance (Core Web Vitals) para as páginas principais da aplicação utilizando React e Gatsby.",
+      "Refatoração de scripts críticos para redução do esforço da main thread, melhorando a interatividade da página.",
+      "Implementação de preload em imagens LCP (Largest Contentful Paint) e eliminação de recursos que bloqueiam a renderização.",
+      "Otimização da estrutura do DOM, reduzindo a profundidade e complexidade para um processamento mais ágil pelo navegador.",
+      "Aplicação de estratégias de carregamento para scripts de terceiros (defer/async), evitando gargalos no carregamento inicial.",
+      "Configuração de ativos estáticos e implementação de Lazy Load em imagens below the fold, reduzindo o tempo de carregamento e o consumo de dados."
     ]
   },
   {
