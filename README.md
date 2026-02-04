@@ -1,277 +1,306 @@
-# 🚀 Raf'Art - Site Institucional
+# 🚀 RafArt - Portfólio Pessoal
 
-[![Next.js](https://img.shields.io/badge/Next.js-13.5.4-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Sass](https://img.shields.io/badge/Sass-1.69.3-pink?style=for-the-badge&logo=sass)](https://sass-lang.com/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.2-purple?style=for-the-badge&logo=bootstrap)](https://getbootstrap.com/)
+<div align="center">
+  
+![Next.js](https://img.shields.io/badge/Next.js-16.1.2-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-19.2.3-blue?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-4.0-38bdf8?style=for-the-badge&logo=tailwind-css)
 
-> **Site institucional profissional para Rafael Marinho - Desenvolvedor Frontend Senior**
+Um portfólio moderno, responsivo e multilíngue construído com Next.js 16, apresentando animações suaves, efeitos de partículas e um design profissional.
+
+
+</div>
+
+---
 
 ## 📋 Índice
 
-- [Sobre o Projeto](#sobre-o-projeto)
+- [Sobre](#sobre)
 - [Funcionalidades](#funcionalidades)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
-- [Como Usar](#como-usar)
-- [Scripts Disponíveis](#scripts-disponíveis)
+- [Tecnologias](#tecnologias)
+- [Começando](#começando)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Instalação](#instalação)
+  - [Variáveis de Ambiente](#variáveis-de-ambiente)
+  - [Executando o Projeto](#executando-o-projeto)
 - [Estrutura do Projeto](#estrutura-do-projeto)
-- [Configuração](#configuração)
-- [Testes](#testes)
-- [Build e Deploy](#build-e-deploy)
-- [Contribuição](#contribuição)
+- [Internacionalização](#internacionalização)
+- [Scripts](#scripts)
+- [Suporte PWA](#suporte-pwa)
+- [Deploy](#deploy)
 - [Licença](#licença)
 - [Contato](#contato)
 
-## 🎯 Sobre o Projeto
+---
 
-O **Raf'Art** é um site institucional moderno e responsivo desenvolvido para apresentar o portfólio profissional de **Rafael Marinho**, desenvolvedor frontend senior. O projeto utiliza as mais recentes tecnologias web para criar uma experiência de usuário excepcional.
+## 🎯 Sobre
 
-### ✨ Características Principais
+RafArt é um site de portfólio pessoal moderno que apresenta habilidades profissionais, projetos e serviços. Construído com as mais recentes tecnologias web, oferece uma experiência de usuário perfeita com animações suaves, suporte multilíngue e um design responsivo que fica ótimo em todos os dispositivos.
 
-- **Design Responsivo**: Adaptável a todos os dispositivos
-- **Performance Otimizada**: Construído com Next.js 13 para máxima velocidade
-- **SEO Otimizado**: Meta tags e estrutura semântica para melhor indexação
-- **Acessibilidade**: Interface intuitiva e navegável
-- **Componentes Reutilizáveis**: Arquitetura modular e escalável
+---
 
-## 🚀 Funcionalidades
+## ✨ Funcionalidades
 
-- **Header**: Apresentação profissional com navegação intuitiva
-- **Skills**: Exibição das habilidades técnicas
-- **Conhecimentos**: Áreas de especialização e tecnologias dominadas
-- **Sobre**: Informações pessoais e profissionais
-- **Experiências**: Histórico profissional e projetos realizados
-- **Footer**: Informações de contato e redes sociais
+- 🌍 **Suporte Multilíngue** - Inglês e Português (facilmente extensível)
+- 🎨 **UI/UX Moderno** - Design limpo e profissional com Tailwind CSS
+- ✨ **Animações Suaves** - Integração com a biblioteca AOS (Animate On Scroll)
+- 🎆 **Fundo de Partículas** - Efeitos de partículas interativos usando tsParticles
+- 📱 **Totalmente Responsivo** - Abordagem mobile-first, funciona em todos os tamanhos de tela
+- ⚡ **Performance Rápida** - Construído com Next.js 16 e otimizado para velocidade
+- 🎭 **Efeito de Máquina de Escrever** - Animações de texto dinâmicas
+- 📧 **Formulário de Contato** - Funcionalidade de e-mail integrada com Resend
+- 🔄 **Navegação Suave** - Transições de página e efeitos de scroll perfeitos
+- 📦 **PWA Pronto** - Suporte para Progressive Web App
+- 🎯 **Otimizado para SEO** - Sitemap e robots.txt incluídos
 
-## 🛠️ Tecnologias Utilizadas
+### Seções Principais
 
-### **Frontend**
-- **Next.js 13.5.4** - Framework React para produção
-- **React 18** - Biblioteca para interfaces de usuário
-- **TypeScript 5** - Superset JavaScript com tipagem estática
-- **Sass 1.69.3** - Pré-processador CSS avançado
+- **Hero** - Seção de destaque com fundo de partículas
+- **Serviços** - Apresentação de habilidades e serviços oferecidos
+- **Currículo** - Experiência profissional e educação
+- **Projetos** - Portfólio de trabalhos concluídos com detalhes
+- **Habilidades** - Competências técnicas e proficiências
+- **Contato** - Formulário de contato e links de redes sociais
+- **Rodapé** - Informações adicionais e links rápidos
 
-### **UI/UX**
-- **Bootstrap 5.3.2** - Framework CSS responsivo
-- **Bootswatch Slate** - Tema personalizado
-- **FontAwesome 6.4.2** - Ícones vetoriais
-- **React Slick** - Carrossel de imagens
+---
 
-### **Desenvolvimento**
-- **ESLint** - Linter para qualidade de código
-- **Jest** - Framework de testes
-- **Testing Library** - Utilitários para testes React
+## 🛠️ Tecnologias
 
-## 📋 Pré-requisitos
+### Core
 
-Antes de começar, certifique-se de ter instalado:
+- **[Next.js 16.1.2](https://nextjs.org/)** - Framework React para produção
+- **[React 19.2.3](https://react.dev/)** - Biblioteca de interface de usuário
+- **[TypeScript 5](https://www.typescriptlang.org/)** - Segurança de tipos
+- **[Tailwind CSS 4](https://tailwindcss.com/)** - Framework CSS utility-first
 
-- **Node.js** (versão 18.0.0 ou superior)
-- **npm** (gerenciador de pacotes Node.js)
-- **Git** (controle de versão)
+### Bibliotecas e Ferramentas
 
-### Verificação das Versões
+- **[next-intl](https://next-intl-docs.vercel.app/)** - Internacionalização
+- **[AOS](https://michalsnik.github.io/aos/)** - Biblioteca de animação ao scroll
+- **[tsParticles](https://particles.js.org/)** - Efeitos de partículas
+- **[Resend](https://resend.com/)** - API de e-mail
+- **[React Icons](https://react-icons.github.io/react-icons/)** - Biblioteca de ícones
+- **[React Hot Toast](https://react-hot-toast.com/)** - Notificações toast
+- **[Typewriter Effect](https://www.npmjs.com/package/typewriter-effect)** - Animações de digitação
+- **[React Parallax Tilt](https://www.npmjs.com/package/react-parallax-tilt)** - Efeitos de inclinação 3D
+
+### Ferramentas de Desenvolvimento
+
+- **ESLint** - Análise de código
+- **PostCSS** - Processamento de CSS
+- **Babel React Compiler** - Otimização do React
+
+---
+
+## 🚀 Começando
+
+### Pré-requisitos
+
+Certifique-se de ter o seguinte instalado em sua máquina:
+
+- **Node.js** (v18 ou superior)
+- **npm** ou **yarn** ou **pnpm**
+
+### Instalação
+
+1. **Clone o repositório**
 
 ```bash
-node --version
-npm --version
-git --version
-```
-
-## 🚀 Instalação
-
-Siga estes passos para configurar o projeto em sua máquina:
-
-### 1. Clone o Repositório
-
-```bash
-git clone https://github.com/seu-usuario/rafart.git
+git clone https://github.com/rarma4/rafart
 cd rafart
 ```
 
-### 2. Instale as Dependências
+2. **Instale as dependências**
 
 ```bash
 npm install
+# ou
+yarn install
+# ou
+pnpm install
 ```
 
-### 3. Configure as Variáveis de Ambiente
+### Variáveis de Ambiente
 
-Crie um arquivo `.env.local` na raiz do projeto:
+Crie um arquivo `.env.local` no diretório raiz e adicione suas variáveis de ambiente:
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://www.rafart.com.br
-NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=seu-id-aqui
+# Configuração de Email (API Resend)
+RESEND_API_KEY=sua_chave_api_resend_aqui
+
+# Adicione outras variáveis de ambiente conforme necessário
 ```
 
-### 4. Execute o Projeto
+Você pode usar o arquivo `model.env` como referência.
+
+### Executando o Projeto
+
+**Modo de desenvolvimento:**
 
 ```bash
 npm run dev
 ```
 
-O site estará disponível em: **http://localhost:3000**
+A aplicação abrirá automaticamente em [http://localhost:3000](http://localhost:3000)
 
-## 💻 Como Usar
-
-### Desenvolvimento Local
+**Build de produção:**
 
 ```bash
-# Inicia o servidor de desenvolvimento
-npm run dev
-
-# Abra http://localhost:3000 no seu navegador
-```
-
-### Build de Produção
-
-```bash
-# Cria build otimizado para produção
 npm run build
-
-# Inicia o servidor de produção
-npm start
+npm run start
 ```
 
-## 📜 Scripts Disponíveis
+**Linting:**
 
-| Comando | Descrição |
-|---------|-----------|
-| `npm run dev` | Inicia servidor de desenvolvimento |
-| `npm run build` | Cria build de produção |
-| `npm start` | Inicia servidor de produção |
-| `npm run lint` | Executa verificação de código |
-| `npm test` | Executa testes automatizados |
+```bash
+npm run lint
+```
+
+---
 
 ## 📁 Estrutura do Projeto
 
 ```
-rafart/
-├── public/                 # Arquivos estáticos
-│   ├── assets/            # CSS, JS e imagens
-│   └── img/               # Imagens do projeto
-├── src/
-│   ├── app/               # App Router do Next.js 13
-│   │   ├── components/    # Componentes reutilizáveis
-│   │   ├── sections/      # Seções da página principal
-│   │   ├── styles/        # Arquivos SCSS
-│   │   └── utils/         # Utilitários
-│   └── types/             # Definições de tipos TypeScript
-├── jest.config.ts         # Configuração do Jest
-├── next.config.js         # Configuração do Next.js
-├── tsconfig.json          # Configuração do TypeScript
-└── package.json           # Dependências e scripts
+portifolio/
+├── app/
+│   ├── [locale]/              # Rotas internacionalizadas
+│   │   ├── globals.css        # Estilos globais
+│   │   ├── layout.tsx         # Layout raiz
+│   │   ├── page.tsx           # Página inicial
+│   │   └── constants/         # Constantes e configurações
+│   ├── api/
+│   │   └── contact/           # Rota de API do formulário de contato
+│   └── components/
+│       ├── Helper/            # Componentes utilitários
+│       └── Home/              # Seções da página inicial
+│           ├── Contact/
+│           ├── Footer/
+│           ├── Hero/
+│           ├── NavBar/
+│           ├── Projects/
+│           ├── Resume/
+│           ├── Services/
+│           └── Skills/
+├── i18n/                      # Configuração de internacionalização
+│   ├── navigation.ts
+│   ├── request.ts
+│   └── routing.ts
+├── messages/                  # Arquivos de tradução
+│   ├── en.json               # Traduções em inglês
+│   └── pt.json               # Traduções em português
+├── public/
+│   ├── assets/               # Arquivos estáticos
+│   │   ├── images/           # Imagens
+│   │   └── manifest.json     # Manifesto PWA
+│   └── files/                # Arquivos para download (CV, etc.)
+├── eslint.config.mjs         # Configuração do ESLint
+├── next.config.ts            # Configuração do Next.js
+├── postcss.config.mjs        # Configuração do PostCSS
+├── tailwind.config.ts        # Configuração do Tailwind CSS
+├── tsconfig.json             # Configuração do TypeScript
+└── package.json              # Dependências do projeto
 ```
-
-## ⚙️ Configuração
-
-### Next.js
-- **App Router**: Utiliza a nova arquitetura do Next.js 13
-- **TypeScript**: Configurado com strict mode
-- **Sass**: Suporte completo para pré-processamento CSS
-
-### Jest (Testes)
-- **Environment**: jsdom para testes de componentes React
-- **Coverage**: Relatórios de cobertura de código
-- **Setup**: Configuração automática para React Testing Library
-
-### ESLint
-- **Configuração**: Baseada no padrão Next.js
-- **Regras**: Foco em qualidade e consistência de código
-
-## 🧪 Testes
-
-### Executar Todos os Testes
-
-```bash
-npm test
-```
-
-### Executar Testes em Modo Watch
-
-```bash
-npm test -- --watch
-```
-
-### Executar Testes com Coverage
-
-```bash
-npm test -- --coverage
-```
-
-### Estrutura de Testes
-
-- **Componentes**: Testes unitários para cada componente
-- **Integração**: Testes de interação entre componentes
-- **Acessibilidade**: Verificação de padrões WCAG
-
-## 🚀 Build e Deploy
-
-### Build de Produção
-
-```bash
-npm run build
-```
-
-### Deploy na Vercel (Recomendado)
-
-1. Conecte seu repositório GitHub à Vercel
-2. Configure as variáveis de ambiente
-3. Deploy automático a cada push
-
-### Deploy Manual
-
-```bash
-npm run build
-npm start
-```
-
-## 🤝 Contribuição
-
-Contribuições são sempre bem-vindas! Para contribuir:
-
-1. **Fork** o projeto
-2. Crie uma **branch** para sua feature (`git checkout -b feature/AmazingFeature`)
-3. **Commit** suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um **Pull Request**
-
-### Padrões de Código
-
-- Siga as convenções do ESLint configurado
-- Use TypeScript para todas as funcionalidades
-- Mantenha a cobertura de testes acima de 80%
-- Documente funções complexas
-
-## 📄 Licença
-
-Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 📞 Contato
-
-**Rafael Marinho** - Desenvolvedor Frontend Senior
-
-- **Website**: [https://www.rafart.com.br](https://www.rafart.com.br)
-- **Email**: [contato@rafart.com.br](mailto:contato@rafart.com.br)
-- **LinkedIn**: [Rafael Marinho](https://linkedin.com/in/rafael-marinho)
-- **GitHub**: [@rafael-marinho](https://github.com/rafael-marinho)
 
 ---
 
-## 🙏 Agradecimentos
+## 🌍 Internacionalização
 
-- **Next.js Team** pelo framework incrível
-- **React Team** pela biblioteca de UI
-- **Bootstrap Team** pelo framework CSS
-- **Comunidade Open Source** por todas as contribuições
+O projeto suporta múltiplos idiomas usando `next-intl`. Idiomas atualmente suportados:
+
+- 🇺🇸 Inglês (`en`)
+- 🇧🇷 Português (`pt`)
+
+### Adicionando um Novo Idioma
+
+1. Crie um novo arquivo JSON no diretório `messages/` (ex: `es.json`)
+2. Adicione traduções seguindo a estrutura dos arquivos existentes
+3. Atualize a configuração de roteamento em `i18n/routing.ts`
+
+### Estrutura de Idiomas
+
+As chaves de tradução são organizadas por componente/seção:
+
+```json
+{
+  "NavBar": { ... },
+  "HeroPage": { ... },
+  "ServicesPage": { ... },
+  "WorksPage": { ... },
+  "SkillsPage": { ... },
+  "ContactPage": { ... }
+}
+```
+
+---
+
+## 📜 Scripts
+
+| Script | Descrição |
+|--------|-------------|
+| `npm run dev` | Inicia o servidor de desenvolvimento e abre o navegador |
+| `npm run build` | Cria o build de produção |
+| `npm run start` | Inicia o servidor de produção |
+| `npm run lint` | Executa o ESLint |
+
+---
+
+## 📱 Suporte PWA
+
+Este portfólio inclui suporte para Progressive Web App (PWA):
+
+- **Arquivo de manifesto**: `public/assets/manifest.json`
+- **Service Worker**: `public/pwabuilder-sw.js`
+- **Suporte offline**: Estratégias básicas de cache
+- **Adicionar à Tela Inicial**: Usuários podem instalar o app em seus dispositivos
+
+---
+
+## 🌐 Deploy
+
+### Vercel (Recomendado)
+
+A maneira mais fácil de fazer deploy desta aplicação Next.js é usando a [Vercel](https://vercel.com):
+
+1. Envie seu código para o GitHub
+2. Importe seu repositório na Vercel
+3. Configure as variáveis de ambiente
+4. Faça o deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+### Outras Plataformas
+
+Este projeto também pode ser implantado em:
+- **Netlify**
+- **AWS Amplify**
+- **Google Cloud Platform**
+- **Docker**
+
+---
+
+## 📄 Licença
+
+Este projeto é open source e está disponível sob a [Licença MIT](LICENSE).
+
+---
+
+## 📧 Contato
+
+Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
+
+- **Email**: rarma4@gmail.com
+- **LinkedIn**: [LinkedIn](https://www.linkedin.com/in/rarma4/)
+- **GitHub**: [GitHub](https://github.com/rarma4)
+- **Portfólio**: [Portfólio](https://www.rafart.com.br/)
 
 ---
 
 <div align="center">
+  
+### ⭐ Se você gostou deste projeto, considere dar uma estrela!
 
-**⭐ Se este projeto foi útil para você, considere dar uma estrela! ⭐**
+Rafael Marinho
 
 </div>

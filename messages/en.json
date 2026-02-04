@@ -1,0 +1,135 @@
+{
+  "NavBar": {
+    "home": "Home",
+    "services": "Services",
+    "resume": "Resume",
+    "works": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "download": "CV"
+  },
+  "HeroPage": {
+    "title": "Developer of Modern",
+    "titleBreak": "applications in",
+    "titleSpan": " Frontend.",
+    "subtitle": "Hi there! I'm Rafael developer ",
+    "subtitleOp1": "ReactJs.",
+    "subtitleOp2": "NextJs.",
+    "subtitleOp3": "Wordpress.",
+    "subtitleOp4": "PHP.",
+    "button": "Get to know my work"
+  },
+  "ServicesPage": {
+    "title": "My",
+    "titleSpan": "knowledge",
+    "subtitle": "My areas of development and the technical arsenal that brings innovative solutions to life.",
+    "titleCard1": "Frontend Development",
+    "descriptionCard1": "Building responsive and accessible web interfaces using React, Next.js, TypeScript, Tailwind CSS and API integrations.",
+    
+    "titleCard2": "E-Commerce Development",
+    "descriptionCard2": "Developing applications using WordPress with builders or custom themes.",
+    
+    "titleCard3": "Design",
+    "descriptionCard3": "Creation and development of visual identity and logo, and graphic design."
+  },
+  "ResumePage": {
+    "labelMore": "more",
+    "labelLess": "less",
+    "educationTitle": "My",
+    "educationTitleSpan": "Education",
+     "resumeCardTitle0": "Information systems",
+    "resumeCardDescription0": "I hold a Bachelor's degree in Information Systems and work as a Frontend Developer with solid experience in technologies such as React.js, Next.js, TypeScript, Node.js, PHP, WordPress, as well as knowledge of MySQL and PostgreSQL databases. I also have experience with styling using Tailwind, Styled Components, SCSS, and Bootstrap.<br/><br/> Throughout my career, I have participated in the development of web solutions such as institutional websites, e-commerce sites, landing pages, and custom systems, both in my own projects and in multidisciplinary teams. In addition, I have experience with consuming and building RESTful APIs and integrating with services such as Amazon S3.<br/><br/> I also have a background in graphic and web design, which allows me to focus not only on performance and functionality but also on visual experience and usability. <br/><br/>I am always looking for new challenges and believe that my experience can directly contribute to the company's objectives, combining technology, creativity, and a focus on results.",
+    "progress": "2015 - 2018",
+
+    "courseTitle": "My",
+    "courseTitleSpan": "Courses",
+
+    "resumeCardTitleCourse1": "AI Career",
+    "resumeCardSubTitleCourse1": "Rocketseat - 5 Hours",
+    "resumeCardDescriptionCourse1": "Automated agent powered by n8n and Artificial Intelligence.",
+    "progress1Course": "2026.1",
+      "resumeCardTitleCourse2": "Intensive Javascript Course",
+    "resumeCardSubTitleCourse2": "Hastag - 8 hours",
+    "resumeCardDescriptionCourse2": "Intensive Javascript course from basic to advanced.",
+    "progress2Course": "2025.10",
+    "resumeCardTitleCourse3": "Node.js Fundamentals ",
+    "resumeCardSubTitleCourse3": "Rocketseat - 3 hours",
+    "resumeCardDescriptionCourse3": "Fundamentals of Node.js for backend development.",
+    "progress3Course": " 2025.9",
+    "resumeCardTitleCourse4": "React.js Fundamentals ",
+    "resumeCardSubTitleCourse4": "Rocketseat - 6 hours",
+    "resumeCardDescriptionCourse4": "Fundamentals of React.js for frontend development.",
+    "progress4Course": " 2025.9",
+
+    "experienceTitle": "My Work",
+    "experienceTitleSpan": "Experiences",
+    
+    "resumeCardTitle1": "FourSys Tech",
+    "resumeCardSubTitle1": "Developer Web front-end Senior & SEO",
+    "resumeCardDescription1": "Service provision for Youse Seguro Auto (10/2025 - 12/2025)<br/><br/>Development and optimization of SEO and performance (Core Web Vitals) for the application's main pages using React and Gatsby.<br/><br/>Refactoring of critical scripts to reduce main thread effort, improving page interactivity.<br/><br/>Implementation of preload in LCP (Largest Contentful Paint) images and elimination of rendering-blocking resources.<br/><br/>Optimization of the DOM structure, reducing depth and complexity for faster browser processing.<br/><br/>Application of loading strategies for third-party scripts (defer/async), avoiding bottlenecks in initial loading.<br/><br/>Configuration of static assets and implementation of Lazy Load in below-the-fold images, reducing loading time and data consumption.",
+    "progress1": "2025.10 - 2026.2",
+    
+    "resumeCardTitle2": "Tenda Negócios Imobiliários",
+    "resumeCardSubTitle2": "Developer Web front-end Senior",
+    "resumeCardDescription2": "React/NextJs/NodeJs - Implementation and A/B testing, applications, tool development and maintenance, AWS S3 communication, Designer systems implementations;<br/><br/>PHP WordPress - Implementation and A/B testing, creation of a plugin to save leads, creation of a custom theme, SEO application for better PageSpeed performance, applications, tool development and maintenance;<br/><br/>C# - Implementation and A/B testing, SEO application for better PageSpeed performance, applications, tool development and maintenance;",
+    "progress2": "2021.10 - 2025.7",
+
+    "resumeCardTitle3": "Spread Teleinformática",
+    "resumeCardSubTitle3": "Developer Web front-end",
+    "resumeCardDescription3": "Provision of services for the companies Novartis Pharma (09/2020 - 02/2021) and Qualicorp (03/2021 - 08/2021)<br/><br/>Implementation and testing of new tools for WordPress software (PHP, CSS, HTML, Hubspot, Bootstrap, API, themes and plugins)<br/><br/>Development and implementation of websites on the WordPress platform (themes and plugins)/Hubspot",
+    "progress3": "2020.9 - 2021.9",
+        "resumeCardTitle4": "Adin Comercial e Serviços de Marketing",
+    "resumeCardSubTitle4": "Junior PHP Programmer",
+    "resumeCardDescription4": "Implementation and testing of new software tools (PHP, jQuery, Ajax, CSS, HTML)<br/><br/>Website development and implementation on the WordPress/Magento platform",
+    "progress4": "2019.9 - 2020.4"
+
+  },
+  "WorksPage": {
+    "seeProject": "See Project",
+    "seeWeb": "See alive",
+    "title": "Gallery of",
+    "titleSpan": "Projects",
+    "titelCard1": "Confederação Brasileira de Hapkido",
+    "descriptionCard1": "This is the institutional website of the Brazilian Hapkido Confederation (CBHKD), developed to showcase the Korean martial art of self-defense, its instructors, gradings, photo gallery, and contact information.",
+
+    "titelCard2": "Dojo Gestão",
+    "descriptionCard2": "Dojo Management is a modern and intuitive web platform for the complete management of martial arts academies. The system offers detailed control over students, teachers, disciplines, gradings, and monthly fees, facilitating the day-to-day administration of the dojo.",
+
+    "titelCard3": "Shopping Movie Zustand",
+    "descriptionCard3": "An example application that implements a movie store with basic functionalities. The app consumes the TMDb (The Movie Database) API to list and search for movies, allows adding items to the cart, and completing purchases with form validation and masks.",
+
+    "titelCard4": "Shopping Movie Redux",
+    "descriptionCard4": "An example application that implements a movie store with basic functionalities. The app consumes the TMDb (The Movie Database) API to list and search for movies, allows adding items to the cart, and completing purchases with form validation and masks.",
+ 
+    "titelCard5": "Paper weight",
+    "descriptionCard5": "A simple and efficient web tool for calculating the total weight of printed materials, helping professionals in printing, design, and logistics to estimate the weight of their productions.",
+
+    "titelCard6": "Reference Center",
+    "descriptionCard6": "A web application developed to facilitate the search for addresses and reference centers, allowing intuitive navigation and dynamic filtering by state."
+
+  },
+  "SkillPage": {
+    "title": "My",
+    "titleSpan": "Skills"
+  },
+  "ContactPage":{
+    "title": "I am available to discuss how I can contribute to your project.",
+    "subtitle": "Let's turn your goals into reality? Contact me.",
+    "namePlaceholder": "Name*",
+    "emailPlaceholder": "Email Address*",
+    "mobilePlaceholder": "Mobile Number*",
+    "messagePlaceholder": "Your Message*",
+    "sendButton": "Send Message",
+    "alertWarning": "Please fill all required fields!",
+    "alertSuccess": "Message sent successfully!",
+    "alertError": "Something went wrong. Please try again later or contact me via email.",
+    "labelGitHub": "GitHub link",
+    "labelLinkedIn": "LinkedIn link",
+    "labelWhatsApp": "Contact by WhatsApp",
+    "labelMobile": "Contact by phone",
+    "labelEmail": "Contact by email"
+  },
+  "Footer": {
+    "title":"Copyright © Raf'Art. All Rights Reserved."
+  }
+}
