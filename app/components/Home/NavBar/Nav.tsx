@@ -65,20 +65,20 @@ const Nav = ({ openNav }: Props) => {
         <div className={`transition-all ${navBg ? 'bg-[#171D1Dd9] shadow-md' : 'fixed'} duration-200 h-[12vh] z-10000 fixed w-full`}>
             <div className='flex items-center h-full justify-between w-[90%] mx-auto'>
                 {/* Logo */}
+                <Link href="/" onClick={scrollToTop}>
+                    <div className='flex items-center space-x-2 cursor-pointer'>
 
-                <div className='flex items-center space-x-2 cursor-pointer' onClick={scrollToTop}>
-
-                    <Image
-                        src={logoRafArt}
-                        alt="logo rafart"
-                        title="logo rafart"
-                        width={30}
-                        height={24}
-                        priority
-                    />
-                    <h2 className='text-xl hidden sm:block md:text-2xl text-zinc-400 '>Raf'Art</h2>
-                </div>
-
+                        <Image
+                            src={logoRafArt}
+                            alt="logo rafart"
+                            title="logo rafart"
+                            width={30}
+                            height={24}
+                            priority
+                        />
+                        <h2 className='text-xl hidden sm:block md:text-2xl text-zinc-400 '>Raf'Art</h2>
+                    </div>
+                </Link>
                 {/* NavLinks */}
                 <div className='hidden lg:flex items-center space-x-10'>
                     {NavLinks.map((link) => {
@@ -92,7 +92,7 @@ const Nav = ({ openNav }: Props) => {
                 </div>
                 {/* Buttons */}
                 <div className='flex items-center space-x-4'>
-                    
+
 
                     {/* CV Button */}
                     <a
