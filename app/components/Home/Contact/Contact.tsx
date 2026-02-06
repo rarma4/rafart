@@ -75,7 +75,7 @@ const Contact = () => {
                         </div>
                     </div> */}
                     {/* Social Icons */}
-                    <div className='flex items-center space-x-3 mt-8'>
+                    <div className='flex justify-center lg:justify-start items-center space-x-3 mt-8'>
 
                         <Link href={"https://github.com/rarma4"} target="_blank" rel="noopener noreferrer"  title={t("labelGitHub")}>
                             <div className='text-zinc-300 w-14 h-14 bg-[#171D1D] rounded-full flex items-center justify-center cursor-pointer flex-col hover:bg-zinc-600 transition-all duration-300'>
