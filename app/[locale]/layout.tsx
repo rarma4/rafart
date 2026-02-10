@@ -24,7 +24,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const isDefaultLocale = locale === 'pt';
-  const canonicalPath = isDefaultLocale ? '/' : `/${locale}`;
+  const canonicalPath = isDefaultLocale ? '/pt' : `/${locale}`;
 
   return {
     title: `Raf'Art – Developer and WebDesign`,
