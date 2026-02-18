@@ -1,6 +1,6 @@
 "use client"
 import { NavLinks } from '@/app/[locale]/constants/constant'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { BiDownload } from 'react-icons/bi'
@@ -16,6 +16,10 @@ type Props = {
 const Nav = ({ openNav }: Props) => {
 
     const t = useTranslations('NavBar');
+    const locale = useLocale();
+    const cvHref = locale.toLowerCase().startsWith('pt')
+        ? '/files/frontEnd-React-RafaelMarinho-pt.pdf'
+        : '/files/frontEnd-React-RafaelMarinho-en.pdf';
 
 
     const [activeSection, setActiveSection] = useState('home')
@@ -96,7 +100,7 @@ const Nav = ({ openNav }: Props) => {
 
                     {/* CV Button */}
                     <a
-                        href="/files/Rafael_Curriculum_ti.pdf"
+                        href={cvHref}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
