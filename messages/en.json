@@ -66,12 +66,12 @@
     
     "resumeCardTitle1": "FourSys Tech",
     "resumeCardSubTitle1": "Developer Web front-end Senior & SEO",
-    "resumeCardDescription1": "Service provision for Youse Seguro Auto (10/2025 - 12/2025)<br/><br/>Development and optimization of SEO and performance (Core Web Vitals) for the application's main pages using React and Gatsby.<br/><br/>Refactoring of critical scripts to reduce main thread effort, improving page interactivity.<br/><br/>Implementation of preload in LCP (Largest Contentful Paint) images and elimination of rendering-blocking resources.<br/><br/>Optimization of the DOM structure, reducing depth and complexity for faster browser processing.<br/><br/>Application of loading strategies for third-party scripts (defer/async), avoiding bottlenecks in initial loading.<br/><br/>Configuration of static assets and implementation of Lazy Load in below-the-fold images, reducing loading time and data consumption.",
+    "resumeCardDescription1": "Service provision for Youse Seguro Auto (10/2025 - 12/2025)<br/><br/>Performance Optimization and Core Web Vitals: I increased performance metrics from 35% to 75% (with peaks of 96%) using React and Gatsby.<br/><br/>Runtime Efficiency: I refactored critical scripts and optimized the DOM structure, reducing main thread load and processing depth for greater interactivity.<br/><br/>Rendering Strategies: I implemented LCP image preloading, eliminated blocking resources, and efficiently managed third-party scripts (defer/async).<br/><br/>Resource Efficiency: I reduced loading time and data consumption through strategic lazy loading and optimization of static assets.",
     "progress1": "2025.10 - 2026.2",
     
     "resumeCardTitle2": "Tenda Negócios Imobiliários",
     "resumeCardSubTitle2": "Developer Web front-end Senior",
-    "resumeCardDescription2": "React/NextJs/NodeJs - Implementation and A/B testing, applications, tool development and maintenance, AWS S3 communication, Designer systems implementations;<br/><br/>PHP WordPress - Implementation and A/B testing, creation of a plugin to save leads, creation of a custom theme, SEO application for better PageSpeed performance, applications, tool development and maintenance;<br/><br/>C# - Implementation and A/B testing, SEO application for better PageSpeed performance, applications, tool development and maintenance;",
+    "resumeCardDescription2": "Modern Development: Building and maintaining scalable applications using React, Next.js, focusing on UX/UI and high performance through Code Splitting and advanced Hooks.<br/><br/>Interface Architecture: Implementing robust Design Systems using the Atomic Design methodology, ensuring visual consistency and component reuse.<br/><br/>State and Data Management: Expertise in complex state management (Redux, Context API) and seamless integration with REST APIs and AWS S3 services.<br/><br/>Quality and Experimentation: Ensuring stability through unit testing (Jest, Testing Library) and conversion optimization through A/B testing.<br/><br/>Performance & SEO (PHP/WordPress): Specialist in custom themes and plugins, increasing performance rates from 55% to 85% (peaks of 97%) in vital metrics (PageSpeed/Core Web Vitals).",
     "progress2": "2021.10 - 2025.7",
 
     "resumeCardTitle3": "Spread Teleinformática",
@@ -82,7 +82,6 @@
     "resumeCardSubTitle4": "Junior PHP Programmer",
     "resumeCardDescription4": "Implementation and testing of new software tools (PHP, jQuery, Ajax, CSS, HTML)<br/><br/>Website development and implementation on the WordPress/Magento platform",
     "progress4": "2019.9 - 2020.4"
-
   },
   "WorksPage": {
     "seeProject": "See Project",
