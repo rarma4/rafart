@@ -18,8 +18,8 @@ const Nav = ({ openNav }: Props) => {
     const t = useTranslations('NavBar');
     const locale = useLocale();
     const cvHref = locale.toLowerCase().startsWith('pt')
-        ? '/files/frontEnd-React-RafaelMarinho-pt.pdf'
-        : '/files/frontEnd-React-RafaelMarinho-en.pdf';
+        ? '/files/CV-Rafael-Desenvolvedor-Frontend-pt.pdf'
+        : '/files/CV-Rafael-Desenvolvedor-Frontend-en.pdf';
 
 
     const [activeSection, setActiveSection] = useState('home')
