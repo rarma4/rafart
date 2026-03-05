@@ -82,7 +82,7 @@ const Contact = () => {
                                 <FaGithub className='w-6 h-6' />
                             </div>
                         </Link>
-                        <Link href={"https://www.linkedin.com/in/rarma4/"} target="_blank" rel="noopener noreferrer"  title={t("labelLinkedIn")}>
+                        <Link href={"https://www.linkedin.com/in/rafaelrmarinho/"} target="_blank" rel="noopener noreferrer"  title={t("labelLinkedIn")}>
                             <div className='w-14 h-14 bg-[#171D1D] rounded-full flex items-center justify-center cursor-pointer flex-col hover:bg-blue-700 transition-all duration-300'>
                                 <FaLinkedin className='text-zinc-300 w-6 h-6' />
                             </div>
