@@ -1,7 +1,7 @@
 "use client"
 import { NavLinks } from '@/app/[locale]/constants/constant'
+import { Link } from '@/i18n/naviagation'
 import { useLocale, useTranslations } from 'next-intl'
-import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { BiDownload } from 'react-icons/bi'
 import { HiBars3BottomRight } from 'react-icons/hi2'

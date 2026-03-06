@@ -23,27 +23,17 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const isDefaultLocale = locale === 'pt';
-  const canonicalPath = isDefaultLocale ? '/pt' : `/${locale}`;
 
   return {
     title: `Raf'Art – Developer and WebDesign`,
     description: 'Pagina de Rafael Marinho desenvolvedor senior frontend, Bacharel em Sistemas de Informação com sólida experiência em tecnologias como React.js, Next.js, TypeScript, PHP, WordPress,  MySQL e PostgreSQL. Experiência com estilização utilizando Tailwind, Styled Components, SCSS e Bootstrap, além de Performance e SEO.',
     metadataBase: new URL('https://www.rafart.com.br/'),
-    alternates: {
-      canonical: canonicalPath,
-      languages: {
-        'pt-BR': '/pt',
-        'en': '/en',
-      },
-    },
     robots: 'index, follow',
     manifest: '/assets/manifest.json',
     keywords: ['Rafael Marinho', 'Rafart', 'Desenvolvedor Web', 'Frontend', 'Web Design', 'Programador', 'Portfolio', 'Desenvolvimento de Sites', 'React', 'Next.js', 'JavaScript', 'CSS', 'HTML', 'Desenvolvedor Senior'],
     openGraph: {
       title: `Raf'Art – Developer and WebDesign`,
       description: 'Pagina de Rafael Marinho desenvolvedor senior frontend, Bacharel em Sistemas de Informação com sólida experiência em tecnologias como React.js, Next.js, TypeScript, PHP, WordPress,  MySQL e PostgreSQL. Experiência com estilização utilizando Tailwind, Styled Components, SCSS e Bootstrap, além de Performance e SEO.',
-      url: `https://www.rafart.com.br${canonicalPath}`,
       siteName: `Raf'Art`,
       locale: locale === 'pt' ? 'pt_BR' : 'en_US',
     },
