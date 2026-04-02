@@ -10,6 +10,7 @@ import Outras from './components/Outras'
 import Inicio from './components/Inicio'
 import Hooks from './components/Hooks'
 import Padroes from './components/Padroes'
+import MyHistory from './components/MyHistory'
 
 const Learn = () => {
   const t = useTranslations('LearnPage')
@@ -23,7 +24,7 @@ const Learn = () => {
           
           {/* Tabs Navigation */}
           <div className="flex flex-wrap gap-2 border-b border-zinc-300 dark:border-zinc-700 mb-6 overflow-x-auto">
-            {['BoasPraticas', 'Performance', 'TecnicasProjetos', 'Questoes', 'Outras', 'Inicio', 'Hooks', 'Padroes'].map((tab) => (
+            {['BoasPraticas', 'MyHistory' ,'Performance', 'TecnicasProjetos', 'Questoes', 'Outras', 'Inicio', 'Hooks', 'Padroes'].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
@@ -34,6 +35,7 @@ const Learn = () => {
                 }`}
               >
                 {tab === 'BoasPraticas' && 'Boas Práticas'}
+                {tab === 'MyHistory' && 'My History'}
                 {tab === 'Performance' && 'Performance'}
                 {tab === 'TecnicasProjetos' && 'Técnicas Projetos'}
                 {tab === 'Questoes' && 'Questões'}
@@ -49,6 +51,10 @@ const Learn = () => {
           <div className="bg-white dark:bg-zinc-800 rounded-lg shadow-lg p-6">
             {activeTab === 'BoasPraticas' && (
               <BoasPraticas/>
+            )}
+
+            {activeTab === 'MyHistory' && (
+              <MyHistory/>
             )}
             
             {activeTab === 'Performance' && (
